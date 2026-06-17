@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Layoff Survival Calculator 2025 – How Long Will Your Money Last?</title>
+<meta name="description" content="Free layoff survival calculator. Enter your savings, expenses, severance, and state to see exactly how long your money lasts, your unemployment benefits, COBRA costs, and a month-by-month survival timeline."/>
+<meta name="keywords" content="layoff survival calculator, how long will savings last job loss, COBRA cost calculator, unemployment benefits calculator, severance calculator, laid off what to do finances 2025"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://layoffsurvival.com/"/>
+<meta property="og:title" content="Layoff Survival Calculator – See Exactly How Long Your Money Lasts"/>
+<meta property="og:description" content="Got laid off? Enter your numbers and see your exact financial runway, unemployment estimate, COBRA cost, and month-by-month survival plan. Free, instant, private."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://layoffsurvival.com/"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Layoff Survival Calculator","description":"Free calculator showing how long savings last after a layoff, including unemployment benefits, COBRA costs, and severance runway.","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long should my emergency fund last after a layoff?","acceptedAnswer":{"@type":"Answer","text":"Financial advisors recommend 3–6 months of expenses as a baseline, but the average job search takes 3–6 months for mid-level roles and up to 9–12 months for senior positions. This calculator shows your exact runway based on your real numbers."}},{"@type":"Question","name":"How much does COBRA cost after a layoff?","acceptedAnswer":{"@type":"Answer","text":"COBRA costs 100–102% of the full premium — you pay both your share and your employer's former contribution. Average COBRA in 2025 is $685/month individual, $1,950/month family. ACA Marketplace plans with subsidies are often much cheaper."}},{"@type":"Question","name":"How do I calculate my unemployment benefits?","acceptedAnswer":{"@type":"Answer","text":"Most states pay 40–60% of your prior weekly wage up to a state maximum cap. Benefits typically last 12–30 weeks. This calculator estimates your benefit based on your salary and state."}},{"@type":"Question","name":"What should I do financially immediately after a layoff?","acceptedAnswer":{"@type":"Answer","text":"(1) File for unemployment immediately — every day you wait is lost money. (2) Evaluate COBRA vs ACA within 60 days. (3) Calculate your exact runway so you know how urgently you need to job search. (4) Do not touch your 401(k) early."}},{"@type":"Question","name":"Should I use my 401(k) after a layoff?","acceptedAnswer":{"@type":"Answer","text":"Generally no — early withdrawals before age 59½ incur a 10% penalty plus income tax, effectively losing 30–40% of the value. Exhaust all other options first."}}]}
+</script>
+<!-- Google AdSense — replace publisher ID -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blue:#1d4ed8;--blue-light:#dbeafe;--blue-mid:#3b82f6;--blue-dark:#1e3a8a;
+  --amber:#f59e0b;--amber-light:#fef3c7;--amber-dark:#d97706;
+  --green:#10b981;--green-light:#d1fae5;--green-dark:#059669;
+  --red:#ef4444;--red-light:#fee2e2;--red-dark:#dc2626;
+  --orange:#f97316;--orange-light:#ffedd5;--orange-dark:#c2410c;
+  --navy:#0f172a;--slate:#475569;--muted:#94a3b8;--light:#cbd5e1;
+  --border:#e2e8f0;--faint:#f8fafc;--white:#fff;--bg:#f0f4f8;
+  --shadow-sm:0 1px 3px rgba(0,0,0,.07);
+  --shadow-md:0 4px 16px rgba(0,0,0,.09);
+  --shadow-lg:0 20px 40px rgba(0,0,0,.12);
+  --shadow-xl:0 30px 60px rgba(0,0,0,.16);
+  --r-sm:8px;--r-md:14px;--r-lg:20px;--r-xl:28px;
+  --font:'Inter',system-ui,sans-serif;
+  --display:'Space Grotesk',system-ui,sans-serif;
+}
+body{font-family:var(--font);background:var(--bg);color:var(--navy);line-height:1.6;font-size:16px;min-height:100vh}
+body::before{content:'';position:fixed;inset:0;background:linear-gradient(135deg,#f0f4f8 0%,#e8edf5 50%,#edf4ff 100%);z-index:-1}
+::-webkit-scrollbar{height:5px;width:5px}
+::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:10px}
+
+/* ── Header ── */
+.site-header{background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.8);padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:62px;position:sticky;top:0;z-index:300;box-shadow:0 2px 12px rgba(29,78,216,.08)}
+.logo{font-family:var(--display);font-weight:800;font-size:18px;color:var(--blue);text-decoration:none;letter-spacing:-.5px;display:flex;align-items:center;gap:9px}
+.logo-icon{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,#1d4ed8,#1e3a8a);display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 4px 10px rgba(29,78,216,.3);flex-shrink:0}
+.header-right{display:flex;align-items:center;gap:8px}
+.header-badge{font-size:11px;font-weight:700;background:var(--amber-light);color:var(--amber-dark);padding:4px 11px;border-radius:20px;white-space:nowrap}
+
+/* ── Container ── */
+.container{max-width:960px;margin:0 auto;padding:0 1.25rem}
+
+/* ── Empathy banner (first-time users) ── */
+.empathy-banner{background:linear-gradient(135deg,#1e3a8a 0%,#1d4ed8 100%);border-radius:var(--r-xl);padding:1.75rem 2rem;color:#fff;margin:1.5rem 0;position:relative;overflow:hidden;box-shadow:0 8px 32px rgba(29,78,216,.3)}
+.empathy-banner::before{content:'';position:absolute;top:-40px;right:-40px;width:180px;height:180px;background:rgba(255,255,255,.06);border-radius:50%}
+.empathy-banner::after{content:'';position:absolute;bottom:-50px;right:60px;width:120px;height:120px;background:rgba(255,255,255,.04);border-radius:50%}
+.empathy-title{font-family:var(--display);font-size:19px;font-weight:800;margin-bottom:.5rem}
+.empathy-text{font-size:14px;opacity:.88;line-height:1.65;max-width:600px;margin-bottom:1rem}
+.empathy-steps{display:flex;gap:10px;flex-wrap:wrap}
+.empathy-step{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:700;cursor:pointer;transition:all .15s}
+.empathy-step:hover{background:rgba(255,255,255,.28);transform:translateY(-1px)}
+.empathy-close{position:absolute;top:14px;right:16px;background:rgba(255,255,255,.15);border:none;color:#fff;border-radius:20px;padding:4px 13px;font-size:12px;cursor:pointer;font-family:var(--font);font-weight:600}
+.empathy-close:hover{background:rgba(255,255,255,.25)}
+
+/* ── Hero ── */
+.hero{padding:2rem 0 1.5rem}
+.hero-eyebrow{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--blue-mid);margin-bottom:.75rem;display:flex;align-items:center;gap:8px}
+.hero-line{display:block;height:1px;width:32px;background:var(--blue-mid);opacity:.4}
+.hero h1{font-family:var(--display);font-size:clamp(24px,3.5vw,38px);font-weight:800;line-height:1.15;letter-spacing:-.75px;margin-bottom:.7rem;color:var(--navy)}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero p{font-size:15px;color:var(--slate);max-width:640px;line-height:1.7;margin-bottom:1.1rem}
+.hero-badges{display:flex;gap:7px;flex-wrap:wrap}
+.hero-badge{background:rgba(255,255,255,.9);color:var(--slate);font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;border:1px solid var(--border);box-shadow:var(--shadow-sm)}
+
+/* ── Ad slot ── */
+.ad-slot{background:rgba(255,255,255,.7);border:1px dashed #93c5fd;border-radius:var(--r-md);text-align:center;padding:.85rem 1rem;color:var(--muted);font-size:13px;margin:1.25rem 0}
+/* Ad position 1: top leaderboard */
+/* Ad position 2: right after runway gauge (highest CTR — results peak attention) */
+/* Ad position 3: between action plan and timeline */
+/* Ad position 4: bottom of page */
+
+/* ── Main layout ── */
+.main-layout{display:grid;grid-template-columns:1fr 360px;gap:1.5rem;align-items:start}
+@media(max-width:840px){.main-layout{grid-template-columns:1fr}}
+
+/* ── Cards ── */
+.card{background:var(--white);border-radius:var(--r-xl);box-shadow:var(--shadow-lg);border:1px solid rgba(255,255,255,.9);overflow:hidden;margin-bottom:1.5rem}
+.card-header{padding:1.1rem 1.5rem;border-bottom:1px solid var(--border);background:var(--faint);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem}
+.card-title{font-family:var(--display);font-size:15px;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:8px}
+.card-body{padding:1.4rem 1.5rem}
+
+/* ── Form ── */
+.section-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-bottom:.85rem;display:flex;align-items:center;gap:8px}
+.section-label::after{content:'';flex:1;height:1px;background:var(--border)}
+.form-section{margin-bottom:1.4rem}
+.field{display:flex;flex-direction:column;gap:4px;margin-bottom:.8rem}
+.field:last-child{margin-bottom:0}
+label{font-size:13px;font-weight:600;color:var(--slate)}
+.field-hint{font-size:11px;color:var(--muted);margin-top:1px;line-height:1.4}
+input,select{padding:9px 13px;border:1.5px solid var(--border);border-radius:var(--r-sm);font-size:14px;font-family:var(--font);color:var(--navy);background:var(--faint);outline:none;transition:all .18s;width:100%;-webkit-appearance:none}
+input:focus,select:focus{border-color:var(--blue);background:#fff;box-shadow:0 0 0 3px rgba(29,78,216,.09)}
+input:hover,select:hover{border-color:#93c5fd}
+.input-wrap{position:relative}
+.input-prefix{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:14px;pointer-events:none;font-weight:500}
+.input-wrap input{padding-left:22px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:480px){.two-col{grid-template-columns:1fr}}
+
+/* ── Runway gauge — the hero visual ── */
+.runway-gauge-card{background:var(--white);border-radius:var(--r-xl);box-shadow:var(--shadow-lg);border:1px solid rgba(255,255,255,.9);overflow:hidden;margin-bottom:1rem}
+.rg-header{padding:1.1rem 1.5rem 0}
+.rg-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-bottom:.5rem}
+.rg-main{display:flex;align-items:flex-end;gap:10px;padding:0 1.5rem .25rem}
+.rg-number{font-family:var(--display);font-size:56px;font-weight:800;letter-spacing:-3px;line-height:1;transition:color .4s}
+.rg-unit{font-size:15px;font-weight:600;color:var(--muted);padding-bottom:10px}
+.rg-urgency{display:inline-flex;align-items:center;gap:6px;border-radius:20px;padding:4px 14px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;margin:0 1.5rem .75rem;transition:all .4s}
+/* arc gauge */
+.gauge-wrap{padding:0 1.5rem .75rem;position:relative}
+.gauge-track{height:14px;border-radius:30px;background:linear-gradient(90deg,#ef4444 0%,#f97316 25%,#f59e0b 50%,#84cc16 75%,#10b981 100%);position:relative;overflow:visible}
+.gauge-needle{position:absolute;top:50%;width:3px;height:24px;background:var(--navy);border-radius:2px;transform:translate(-50%,-50%);transition:left .6s cubic-bezier(.34,1.2,.64,1);box-shadow:0 2px 6px rgba(0,0,0,.25)}
+.gauge-needle::after{content:'';position:absolute;top:-5px;left:50%;transform:translateX(-50%);width:12px;height:12px;border-radius:50%;background:var(--navy);box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.gauge-labels{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);font-weight:600;margin-top:6px}
+.rg-sub{padding:0 1.5rem .85rem;font-size:12px;color:var(--muted);line-height:1.5}
+
+/* stat cards sidebar */
+.sidebar{display:flex;flex-direction:column;gap:.85rem}
+.stat-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);padding:1rem 1.2rem;box-shadow:var(--shadow-sm)}
+.stat-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:.2rem}
+.stat-value{font-family:var(--display);font-size:22px;font-weight:800;letter-spacing:-.5px;line-height:1}
+.stat-sub{font-size:11px;color:var(--muted);margin-top:.2rem;line-height:1.4}
+.stat-green{color:var(--green-dark)}
+.stat-amber{color:var(--amber-dark)}
+.stat-red{color:var(--red-dark)}
+.stat-blue{color:var(--blue)}
+
+/* ── 48-hour checklist ── */
+.checklist-card{background:linear-gradient(135deg,#fff8ed,#fffbf5);border:1px solid #fed7aa;border-radius:var(--r-xl);overflow:hidden;margin-bottom:1.5rem;box-shadow:var(--shadow-md)}
+.cl-header{background:linear-gradient(135deg,#7c2d12,#ea580c);color:#fff;padding:1.1rem 1.5rem;display:flex;align-items:center;gap:10px}
+.cl-title{font-family:var(--display);font-size:16px;font-weight:700}
+.cl-body{padding:1.25rem 1.5rem}
+.cl-item{display:flex;align-items:flex-start;gap:12px;padding:.75rem 0;border-bottom:1px solid rgba(234,88,12,.1);cursor:pointer;transition:background .15s;border-radius:var(--r-sm);padding-left:.5rem}
+.cl-item:last-child{border-bottom:none}
+.cl-item:hover{background:rgba(234,88,12,.04)}
+.cl-checkbox{width:22px;height:22px;border-radius:6px;border:2px solid var(--orange);background:#fff;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .2s;margin-top:1px}
+.cl-item.checked .cl-checkbox{background:var(--orange);border-color:var(--orange);color:#fff;font-size:12px}
+.cl-item.checked .cl-text{text-decoration:line-through;opacity:.55}
+.cl-text-wrap{flex:1}
+.cl-text{font-size:13px;font-weight:600;color:var(--navy);line-height:1.4}
+.cl-subtext{font-size:12px;color:var(--slate);margin-top:2px;line-height:1.4}
+.cl-badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;margin-left:6px;vertical-align:middle}
+.cl-badge-urgent{background:var(--red-light);color:var(--red-dark)}
+.cl-badge-today{background:var(--orange-light);color:var(--orange-dark)}
+.cl-badge-week{background:var(--amber-light);color:var(--amber-dark)}
+.cl-progress{height:5px;border-radius:10px;background:var(--border);overflow:hidden;margin-top:1rem}
+.cl-progress-fill{height:100%;background:linear-gradient(90deg,var(--orange),var(--amber));border-radius:10px;transition:width .4s}
+.cl-progress-label{font-size:11px;color:var(--slate);margin-top:.35rem}
+
+/* ── Action plan ── */
+.priority-card{border-radius:var(--r-lg);padding:.9rem 1.1rem;border-left:4px solid;margin-bottom:.7rem}
+.priority-urgent{background:var(--red-light);border-color:var(--red);color:var(--red-dark)}
+.priority-soon{background:var(--amber-light);border-color:var(--amber);color:var(--amber-dark)}
+.priority-plan{background:var(--blue-light);border-color:var(--blue-mid);color:var(--blue-dark)}
+.p-title{font-size:13px;font-weight:700;margin-bottom:.25rem;display:flex;align-items:center;gap:6px}
+.p-text{font-size:13px;line-height:1.6;opacity:.85;color:inherit}
+
+/* ── Timeline (desktop table + mobile cards) ── */
+.timeline-table-wrap{overflow-x:auto}
+.timeline-table{width:100%;border-collapse:collapse;min-width:560px;font-size:13px}
+.timeline-table th{padding:8px 12px;background:var(--faint);font-weight:700;text-align:left;border-bottom:2px solid var(--border);font-size:11px;color:var(--slate);text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
+.timeline-table td{padding:8px 12px;border-bottom:1px solid var(--border);vertical-align:middle}
+.timeline-table tr:last-child td{border-bottom:none}
+.timeline-table tr:hover td{background:#fafafa}
+.tl-bar{height:8px;border-radius:20px;background:var(--border);overflow:hidden;min-width:60px}
+.tl-bar-fill{height:100%;border-radius:20px;transition:width .4s}
+.t-badge{display:inline-block;padding:2px 9px;border-radius:12px;font-size:10px;font-weight:700;text-transform:uppercase}
+.t-stable{background:var(--green-light);color:var(--green-dark)}
+.t-watch{background:var(--amber-light);color:var(--amber-dark)}
+.t-critical{background:var(--red-light);color:var(--red-dark)}
+.t-depleted{background:#f1f5f9;color:var(--slate)}
+
+/* Mobile timeline cards (hidden on desktop) */
+.timeline-mobile{display:none;flex-direction:column;gap:8px;padding:1rem 1.25rem}
+@media(max-width:600px){
+  .timeline-table-wrap{display:none}
+  .timeline-mobile{display:flex}
+}
+.tm-card{background:var(--faint);border:1px solid var(--border);border-radius:var(--r-md);padding:.85rem 1rem;display:grid;grid-template-columns:auto 1fr auto;gap:8px 12px;align-items:center}
+.tm-month{font-family:var(--display);font-size:13px;font-weight:800;color:var(--navy);white-space:nowrap}
+.tm-bar-wrap{grid-column:1/-1}
+.tm-details{display:flex;gap:8px;flex-wrap:wrap;font-size:12px;color:var(--slate)}
+.tm-detail{display:flex;gap:4px;align-items:center}
+
+/* ── Share results ── */
+.share-results-card{background:linear-gradient(135deg,#f0f4f8,#e8edf5);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.1rem 1.4rem;margin-bottom:1.5rem}
+.share-results-title{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:.6rem;display:flex;align-items:center;gap:7px}
+.share-row{display:flex;gap:8px;flex-wrap:wrap}
+.share-btn{padding:7px 16px;border-radius:20px;border:none;font-size:12px;font-weight:700;cursor:pointer;font-family:var(--font);transition:all .15s;display:inline-flex;align-items:center;gap:5px}
+.share-btn:hover{transform:translateY(-1px);box-shadow:var(--shadow-sm)}
+.sh-reddit{background:#ff4500;color:#fff}
+.sh-linkedin{background:#0a66c2;color:#fff}
+.sh-twitter{background:#000;color:#fff}
+.sh-copy{background:var(--white);border:1.5px solid var(--border)!important;color:var(--slate)}
+.sh-result{background:linear-gradient(135deg,#059669,#10b981);color:#fff}
+
+/* ── Data management bar ── */
+.data-bar{display:flex;gap:8px;flex-wrap:wrap;padding:.65rem 1.25rem;background:var(--faint);border-top:1px solid var(--border);font-size:12px}
+.data-btn{background:none;border:1px solid var(--border);border-radius:20px;padding:3px 12px;font-size:11px;font-weight:600;cursor:pointer;color:var(--muted);font-family:var(--font);transition:all .15s}
+.data-btn:hover{background:var(--border);color:var(--navy)}
+.data-btn.danger{border-color:#fca5a5;color:var(--red)}
+.data-btn.danger:hover{background:var(--red-light)}
+
+/* ── Content & FAQ ── */
+.content-card{background:var(--white);border-radius:var(--r-lg);border:1px solid var(--border);padding:1.75rem;margin-bottom:1.5rem;box-shadow:var(--shadow-md)}
+.content-card h2{font-family:var(--display);font-size:20px;font-weight:700;color:var(--navy);margin:1.75rem 0 .65rem;line-height:1.3}
+.content-card h2:first-child{margin-top:0}
+.content-card p,.content-card li{color:var(--slate);margin-bottom:.8rem;line-height:1.75}
+.content-card ul{padding-left:1.25rem;margin-bottom:.9rem}
+.content-card li{margin-bottom:.35rem}
+.content-card strong{color:var(--navy);font-weight:600}
+.faq-card{background:var(--white);border-radius:var(--r-lg);border:1px solid var(--border);padding:1.75rem;margin-bottom:1.5rem;box-shadow:var(--shadow-md)}
+.faq-card h2{font-family:var(--display);font-size:20px;font-weight:700;margin-bottom:1.1rem}
+.faq-item{border-top:1px solid var(--border)}
+.faq-item:last-child{border-bottom:1px solid var(--border)}
+.faq-q{font-weight:600;font-size:14px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:.9rem 0;user-select:none;color:var(--navy);transition:color .15s}
+.faq-q:hover{color:var(--blue)}
+.faq-icon{width:22px;height:22px;border-radius:50%;background:var(--blue-light);border:1.5px solid #93c5fd;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:13px;color:var(--blue);transition:all .2s}
+.faq-q.open .faq-icon{transform:rotate(45deg);background:#bfdbfe}
+.faq-a{font-size:14px;color:var(--slate);padding-bottom:.9rem;display:none;line-height:1.75}
+.faq-a.open{display:block}
+
+/* ── Toast ── */
+.toast{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%) translateY(8px);background:rgba(15,23,42,.96);color:#fff;padding:.7rem 1.4rem;border-radius:30px;font-size:14px;font-weight:600;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:999;opacity:0;transition:all .25s;pointer-events:none;max-width:90vw;text-align:center;white-space:nowrap}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+footer{background:rgba(255,255,255,.8);backdrop-filter:blur(8px);border-top:1px solid var(--border);padding:1.5rem;text-align:center;font-size:13px;color:var(--muted);margin-top:2rem}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--navy)}
+
+@media(max-width:600px){
+  .card-body,.cl-body,.content-card,.faq-card{padding:1.1rem 1.15rem}
+  .card-header{padding:.9rem 1.15rem}
+  .site-header{padding:0 1rem}
+  .hero{padding:1.5rem 0 1.1rem}
+  .rg-number{font-size:44px}
+  .empathy-banner{padding:1.25rem}
+  .main-layout>div:last-child{order:-1}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/" class="logo" aria-label="LayoffBudget home">
+    <div class="logo-icon" aria-hidden="true">🛡️</div>
+    LayoffBudget
+  </a>
+  <div class="header-right">
+    <span class="header-badge">Private · Saves Locally</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- ── Empathy banner — first-time users only ── -->
+  <div class="empathy-banner" id="empathy-banner" style="display:none" role="banner">
+    <button class="empathy-close" id="empathy-close" aria-label="Dismiss welcome message">✕ Got it</button>
+    <div class="empathy-title">We're sorry this happened. Let's get you clarity. 💙</div>
+    <div class="empathy-text">Losing a job is stressful — but knowing your exact financial situation removes the guesswork and helps you make calm, smart decisions. Enter your numbers below and we'll show you exactly where you stand and what to do first.</div>
+    <div class="empathy-steps" role="list">
+      <span class="empathy-step" role="listitem">📋 Just got laid off</span>
+      <span class="empathy-step" role="listitem">📅 Planning ahead</span>
+      <span class="empathy-step" role="listitem">💪 Helping someone else</span>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="hero-eyebrow">
+      <span class="hero-line"></span>Free · Instant · 100% Private<span class="hero-line"></span>
+    </div>
+    <h1>Layoff Survival Calculator —<br/><em>How Long Will Your Money Last?</em></h1>
+    <p>Enter your real numbers and get your exact financial runway, estimated unemployment benefits, COBRA vs ACA costs, a 48-hour action checklist, and a month-by-month survival timeline. Know exactly where you stand.</p>
+    <div class="hero-badges">
+      <span class="hero-badge">✓ Unemployment Estimator</span>
+      <span class="hero-badge">✓ COBRA vs ACA</span>
+      <span class="hero-badge">✓ Month-by-Month Timeline</span>
+      <span class="hero-badge">✓ 48-Hr Action Checklist</span>
+      <span class="hero-badge">✓ All 50 States</span>
+    </div>
+  </div>
+
+  <!-- Ad 1: top leaderboard -->
+  <div class="ad-slot" role="complementary" aria-label="Advertisement">Advertisement <!-- AdSense leaderboard 728×90 --></div>
+
+  <div class="main-layout">
+
+    <!-- ── LEFT: Inputs ── -->
+    <div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">📊 Your Financial Situation</div>
+          <div style="font-size:12px;color:var(--muted)">Updates in real time as you type</div>
+        </div>
+        <div class="card-body">
+
+          <div class="form-section">
+            <div class="section-label">Savings &amp; Severance</div>
+            <div class="field">
+              <label for="savings">Total liquid savings ($)</label>
+              <div class="input-wrap"><span class="input-prefix">$</span>
+                <input type="number" id="savings" value="15000" min="0" step="500" aria-describedby="savings-hint"/>
+              </div>
+              <span class="field-hint" id="savings-hint">Checking + savings. Don't include 401(k) or retirement accounts.</span>
+            </div>
+            <div class="two-col">
+              <div class="field">
+                <label for="severance-weeks">Severance (weeks)</label>
+                <input type="number" id="severance-weeks" value="4" min="0" max="104" aria-describedby="sev-hint"/>
+                <span class="field-hint" id="sev-hint">0 if none. Review before signing — it's negotiable.</span>
+              </div>
+              <div class="field">
+                <label for="prior-salary">Prior annual salary ($)</label>
+                <div class="input-wrap"><span class="input-prefix">$</span>
+                  <input type="number" id="prior-salary" value="85000" min="0" step="1000"/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="section-label">Monthly Expenses</div>
+            <div class="two-col">
+              <div class="field"><label for="rent">Rent / Mortgage ($)</label>
+                <div class="input-wrap"><span class="input-prefix">$</span><input type="number" id="rent" value="1800" min="0" step="50"/></div>
+              </div>
+              <div class="field"><label for="food">Food &amp; Groceries ($)</label>
+                <div class="input-wrap"><span class="input-prefix">$</span><input type="number" id="food" value="500" min="0" step="25"/></div>
+              </div>
+              <div class="field"><label for="utilities">Utilities &amp; Bills ($)</label>
+                <div class="input-wrap"><span class="input-prefix">$</span><input type="number" id="utilities" value="200" min="0" step="25"/></div>
+              </div>
+              <div class="field"><label for="transport">Transportation ($)</label>
+                <div class="input-wrap"><span class="input-prefix">$</span><input type="number" id="transport" value="300" min="0" step="25"/></div>
+              </div>
+              <div class="field"><label for="subscriptions">Subscriptions ($)</label>
+                <div class="input-wrap"><span class="input-prefix">$</span><input type="number" id="subscriptions" value="150" min="0" step="25"/></div>
+              </div>
+              <div class="field"><label for="debt">Debt payments ($)</label>
+                <div class="input-wrap"><span class="input-prefix">$</span><input type="number" id="debt" value="200" min="0" step="25"/></div>
+                <span class="field-hint">Cards, student loans, car loan</span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="other-expenses">Other monthly ($)</label>
+              <div class="input-wrap"><span class="input-prefix">$</span><input type="number" id="other-expenses" value="0" min="0" step="50"/></div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <div class="section-label">Health Insurance &amp; State</div>
+            <div class="two-col">
+              <div class="field">
+                <label for="state">Your State</label>
+                <select id="state" aria-label="Select your state">
+                  <optgroup label="High benefit states">
+                    <option value="MA">Massachusetts — up to $1,362/wk</option>
+                    <option value="DC">DC — up to $1,049/wk</option>
+                    <option value="WA">Washington — up to $1,019/wk</option>
+                    <option value="MN">Minnesota — up to $906/wk</option>
+                    <option value="NJ">New Jersey — up to $875/wk</option>
+                    <option value="CT">Connecticut — up to $858/wk</option>
+                    <option value="ND">North Dakota — up to $843/wk</option>
+                    <option value="VT">Vermont — up to $823/wk</option>
+                    <option value="OR">Oregon — up to $812/wk</option>
+                    <option value="CO">Colorado — up to $781/wk</option>
+                    <option value="HI">Hawaii — up to $769/wk</option>
+                    <option value="RI">Rhode Island — up to $762/wk</option>
+                    <option value="CA">California — up to $751/wk</option>
+                    <option value="UT">Utah — up to $731/wk</option>
+                  </optgroup>
+                  <optgroup label="Mid benefit states">
+                    <option value="NY" selected>New York — up to $713/wk</option>
+                    <option value="IL">Illinois — up to $693/wk</option>
+                    <option value="SD">South Dakota — up to $693/wk</option>
+                    <option value="IA">Iowa — up to $668/wk</option>
+                    <option value="OH">Ohio — up to $647/wk</option>
+                    <option value="TX">Texas — up to $631/wk</option>
+                    <option value="KY">Kentucky — up to $626/wk</option>
+                    <option value="WI">Wisconsin — up to $627/wk</option>
+                    <option value="PA">Pennsylvania — up to $614/wk</option>
+                    <option value="MI">Michigan — up to $614/wk</option>
+                    <option value="FL">Florida — up to $600/wk</option>
+                    <option value="WY">Wyoming — up to $595/wk</option>
+                    <option value="KS">Kansas — up to $560/wk</option>
+                    <option value="VA">Virginia — up to $538/wk</option>
+                    <option value="OK">Oklahoma — up to $539/wk</option>
+                    <option value="ME">Maine — up to $531/wk</option>
+                    <option value="NM">New Mexico — up to $511/wk</option>
+                    <option value="ID">Idaho — up to $498/wk</option>
+                    <option value="NV">Nevada — up to $469/wk</option>
+                    <option value="NE">Nebraska — up to $462/wk</option>
+                    <option value="DE">Delaware — up to $450/wk</option>
+                    <option value="AR">Arkansas — up to $451/wk</option>
+                  </optgroup>
+                  <optgroup label="Lower benefit states">
+                    <option value="MD">Maryland — up to $430/wk</option>
+                    <option value="NH">New Hampshire — up to $427/wk</option>
+                    <option value="AK">Alaska — up to $370/wk</option>
+                    <option value="GA">Georgia — up to $365/wk</option>
+                    <option value="SC">South Carolina — up to $326/wk</option>
+                    <option value="AZ">Arizona — up to $320/wk</option>
+                    <option value="MO">Missouri — up to $320/wk</option>
+                    <option value="IN">Indiana — up to $390/wk</option>
+                    <option value="NC">North Carolina — up to $350/wk</option>
+                    <option value="TN">Tennessee — up to $275/wk</option>
+                    <option value="AL">Alabama — up to $275/wk</option>
+                    <option value="LA">Louisiana — up to $247/wk</option>
+                    <option value="MS">Mississippi — up to $235/wk</option>
+                    <option value="MT">Montana — up to $740/wk</option>
+                    <option value="WV">West Virginia — up to $648/wk</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="field">
+                <label for="coverage">Coverage type</label>
+                <select id="coverage">
+                  <option value="individual">Individual</option>
+                  <option value="family">Family (2+ people)</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="had-insurance">Had employer health insurance?</label>
+              <select id="had-insurance">
+                <option value="yes">Yes — evaluating COBRA vs ACA</option>
+                <option value="no">No — already on own/spouse plan</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+        <div class="data-bar">
+          <button class="data-btn" id="export-btn">⬇️ Export scenario</button>
+          <input type="file" id="import-file" accept=".json" style="display:none" aria-label="Import scenario file"/>
+          <button class="data-btn" id="import-btn">⬆️ Import scenario</button>
+          <button class="data-btn danger" id="clear-btn">🗑 Clear all data</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── RIGHT: Results ── -->
+    <div class="sidebar">
+
+      <!-- Runway gauge — hero visual -->
+      <div class="runway-gauge-card" role="region" aria-label="Financial runway gauge">
+        <div class="rg-header">
+          <div class="rg-label">Your Financial Runway</div>
+        </div>
+        <div class="rg-main">
+          <div class="rg-number" id="rg-number">—</div>
+          <div class="rg-unit" id="rg-unit">months</div>
+        </div>
+        <div class="rg-urgency" id="rg-urgency">Calculating...</div>
+        <div class="gauge-wrap">
+          <div class="gauge-track" role="img" aria-label="Runway gauge">
+            <div class="gauge-needle" id="gauge-needle" style="left:50%"></div>
+          </div>
+          <div class="gauge-labels" aria-hidden="true">
+            <span>Critical</span><span>Tight</span><span>Moderate</span><span>Stable</span>
+          </div>
+        </div>
+        <div class="rg-sub" id="rg-sub">Enter your numbers above — results update live.</div>
+      </div>
+
+      <!-- Ad 2: right after runway gauge — peak attention, highest CTR -->
+      <div class="ad-slot" aria-label="Advertisement" style="margin:0">Advertisement <!-- AdSense 300×250 --></div>
+
+      <div class="stat-card">
+        <div class="stat-label">📬 Est. Unemployment Benefit</div>
+        <div class="stat-value" id="ui-weekly">—</div>
+        <div class="stat-sub" id="ui-sub">Weekly · file immediately after layoff</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">💰 Severance Total</div>
+        <div class="stat-value" id="severance-total">—</div>
+        <div class="stat-sub" id="severance-sub">Read it carefully before signing</div>
+      </div>
+
+      <div class="stat-card" id="cobra-stat">
+        <div class="stat-label">🏥 COBRA vs ACA</div>
+        <div class="stat-value" id="cobra-cost">—</div>
+        <div class="stat-sub" id="cobra-sub">Decision needed within 60 days</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">🔻 Monthly Burn Rate</div>
+        <div class="stat-value" id="burn-rate">—</div>
+        <div class="stat-sub">Total monthly expenses</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">📉 Net Burn (with UI benefits)</div>
+        <div class="stat-value" id="net-burn">—</div>
+        <div class="stat-sub" id="net-burn-sub">Monthly shortfall after unemployment</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 48-hour checklist ── -->
+  <div class="checklist-card" id="checklist-card">
+    <div class="cl-header">
+      <span style="font-size:20px">⚡</span>
+      <div>
+        <div class="cl-title">Your First 48 Hours — Action Checklist</div>
+        <div style="font-size:12px;opacity:.8;margin-top:2px">Check off as you complete each step</div>
+      </div>
+    </div>
+    <div class="cl-body">
+      <div class="cl-item" data-id="ui" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="cl-checkbox" aria-hidden="true"></div>
+        <div class="cl-text-wrap">
+          <div class="cl-text">File for unemployment <span class="cl-badge cl-badge-urgent">Do today</span></div>
+          <div class="cl-subtext">Go to your state's unemployment website. Takes ~20 minutes. Every day you wait = lost money you can't recover.</div>
+        </div>
+      </div>
+      <div class="cl-item" data-id="health" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="cl-checkbox" aria-hidden="true"></div>
+        <div class="cl-text-wrap">
+          <div class="cl-text">Evaluate COBRA vs ACA health insurance <span class="cl-badge cl-badge-urgent">60-day deadline</span></div>
+          <div class="cl-subtext">Your layoff is a qualifying life event. Compare costs at healthcare.gov. ACA is often cheaper — especially if income drops.</div>
+        </div>
+      </div>
+      <div class="cl-item" data-id="severance" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="cl-checkbox" aria-hidden="true"></div>
+        <div class="cl-text-wrap">
+          <div class="cl-text">Review (and negotiate) your severance <span class="cl-badge cl-badge-today">Before signing</span></div>
+          <div class="cl-subtext">You have 21–45 days to sign. Ask for more weeks, extended benefits, or accelerated equity. Never sign on day one.</div>
+        </div>
+      </div>
+      <div class="cl-item" data-id="budget" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="cl-checkbox" aria-hidden="true"></div>
+        <div class="cl-text-wrap">
+          <div class="cl-text">Audit and cut subscriptions <span class="cl-badge cl-badge-today">This week</span></div>
+          <div class="cl-subtext">Pause or cancel everything non-essential. Even $200/month saved adds ~2 weeks of runway over a 6-month search.</div>
+        </div>
+      </div>
+      <div class="cl-item" data-id="hardship" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="cl-checkbox" aria-hidden="true"></div>
+        <div class="cl-text-wrap">
+          <div class="cl-text">Call debt servicers about hardship programs <span class="cl-badge cl-badge-week">This week</span></div>
+          <div class="cl-subtext">Most credit cards, student loans, and car lenders have hardship deferral programs. Call proactively — they're much more helpful before you miss a payment.</div>
+        </div>
+      </div>
+      <div class="cl-item" data-id="401k" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="cl-checkbox" aria-hidden="true"></div>
+        <div class="cl-text-wrap">
+          <div class="cl-text">Protect your 401(k) — do not withdraw early</div>
+          <div class="cl-subtext">Early withdrawal = 10% penalty + income tax = losing 30–40% immediately. Roll to an IRA instead. Last resort only.</div>
+        </div>
+      </div>
+      <div id="cl-progress-wrap" style="margin-top:.75rem">
+        <div class="cl-progress"><div class="cl-progress-fill" id="cl-fill" style="width:0%"></div></div>
+        <div class="cl-progress-label" id="cl-label">0 of 6 steps complete</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Results section ── -->
+  <div id="results-section">
+
+    <!-- Action plan -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">⚡ Your Personalized Action Plan</div>
+        <div style="font-size:12px;color:var(--muted)">Based on your numbers · in priority order</div>
+      </div>
+      <div class="card-body" id="action-plan">
+        <div style="text-align:center;padding:1.5rem;color:var(--muted);font-size:14px">Enter your numbers above — your personalized plan will appear here.</div>
+      </div>
+    </div>
+
+    <!-- Ad 3: between action plan and timeline — second highest CTR -->
+    <div class="ad-slot" aria-label="Advertisement">Advertisement <!-- AdSense in-content 468×60 --></div>
+
+    <!-- Timeline -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">📅 Month-by-Month Survival Timeline</div>
+      </div>
+      <div id="timeline-body">
+        <div style="text-align:center;padding:2rem;color:var(--muted);font-size:14px">Timeline will appear after entering your numbers.</div>
+      </div>
+    </div>
+
+    <!-- Share results -->
+    <div class="share-results-card">
+      <div class="share-results-title">📤 Share this tool with someone who needs it</div>
+      <div class="share-row">
+        <button class="share-btn sh-reddit" id="sh-reddit" aria-label="Share on Reddit">🔴 Reddit</button>
+        <button class="share-btn sh-linkedin" id="sh-linkedin" aria-label="Share on LinkedIn">in LinkedIn</button>
+        <button class="share-btn sh-twitter" id="sh-twitter" aria-label="Share on Twitter/X">𝕏 Twitter</button>
+        <button class="share-btn sh-copy" id="sh-copy" aria-label="Copy link">⎘ Copy Link</button>
+        <button class="share-btn sh-result" id="sh-result" aria-label="Share my results">📊 Share My Results</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Ad 4: bottom -->
+  <div class="ad-slot" aria-label="Advertisement">Advertisement <!-- AdSense --></div>
+
+  <!-- SEO Content -->
+  <div class="content-card">
+    <h2>What to do financially in the first 48 hours after a layoff</h2>
+    <p>The decisions you make in the first two days after a layoff have an outsized impact on your financial survival. Most people make at least one costly mistake — usually waiting to file for unemployment or making a panicked decision about health insurance. Here's the correct sequence:</p>
+    <ul>
+      <li><strong>Day 1: File for unemployment immediately.</strong> Every state has a waiting period (usually 1 week) before benefits start. Every day you delay filing is a day of benefits you permanently lose. In most states you can file online in under 30 minutes.</li>
+      <li><strong>Day 1: Do not touch your 401(k).</strong> Early withdrawals before 59½ trigger a 10% penalty plus income tax — effectively losing 30–40% of the value.</li>
+      <li><strong>Day 2: Evaluate health insurance within 60 days.</strong> A layoff is a qualifying life event for ACA Marketplace enrollment. COBRA is often much more expensive — compare both at healthcare.gov before deciding.</li>
+      <li><strong>Day 2: Calculate your exact runway.</strong> That's what this tool is for. Knowing your precise number removes anxiety and lets you job search from a position of calm clarity.</li>
+    </ul>
+
+    <h2>How to estimate your unemployment benefits</h2>
+    <p>Unemployment benefits are calculated by your state. Most states pay <strong>40–60% of your prior average weekly wage</strong>, up to a state maximum cap. Duration ranges from 12–30 weeks. For example: earning $85,000/year ($1,635/week), New York pays up to $713/week. The same worker in Mississippi gets at most $235/week — a nearly 3x difference based purely on location.</p>
+
+    <h2>COBRA vs ACA Marketplace after a layoff</h2>
+    <p>COBRA lets you keep your exact employer plan but at full cost — typically <strong>$685–700/month for individuals</strong> and <strong>$1,900–2,200/month for families</strong>. ACA Marketplace plans often cost significantly less, especially when your income drops substantially after a layoff — premium tax credits can reduce monthly costs to $0–200 for many people. Compare both options within 60 days of your coverage end date.</p>
+
+    <h2>How to extend your financial runway while job searching</h2>
+    <ul>
+      <li><strong>Pause non-essential subscriptions immediately.</strong> Streaming, gym apps, news subscriptions — cut or pause everything that isn't housing, food, utilities, or insurance.</li>
+      <li><strong>Call your debt servicers proactively.</strong> Most offer hardship programs for customers who call before missing a payment. Federal student loans have income-driven repayment that can reduce payments to $0.</li>
+      <li><strong>Negotiate your rent if you can.</strong> Landlords often prefer a temporary reduced payment to finding a new tenant. A 60-day reduced rate while you search costs them nothing and gives you breathing room.</li>
+      <li><strong>Consider freelance or contract work.</strong> Even $1,000–1,500/month in part-time freelance income extends a 6-month runway by 2–3 additional months.</li>
+    </ul>
+  </div>
+
+  <div class="faq-card">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <div class="faq-q" role="button" aria-expanded="false">How long does the average job search take after a layoff?<div class="faq-icon" aria-hidden="true">+</div></div>
+      <div class="faq-a">Entry-level: 1–3 months. Mid-level: 3–6 months. Senior/Director: 4–8 months. VP+: 6–12+ months. Plan for the longer end — financial stress mid-search leads to accepting the wrong offer.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" role="button" aria-expanded="false">Should I negotiate my severance package?<div class="faq-icon" aria-hidden="true">+</div></div>
+      <div class="faq-a">Yes — most people don't, but it's often negotiable. Common asks: additional weeks of pay, extended health insurance, accelerated unvested equity, keeping company equipment. You typically have 21–45 days to review. Never sign on day one.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" role="button" aria-expanded="false">What happens to my 401(k) after a layoff?<div class="faq-icon" aria-hidden="true">+</div></div>
+      <div class="faq-a">It stays yours. Your options: leave it with your former employer (fine short-term), roll it to your new employer's plan, or roll it to an IRA (most flexible option). Never cash it out early — the 10% penalty plus income tax means losing 30–40% immediately.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" role="button" aria-expanded="false">Can I collect unemployment while doing freelance work?<div class="faq-icon" aria-hidden="true">+</div></div>
+      <div class="faq-a">Yes in most states, but you must report the income. Your benefit is usually reduced by the amount earned above a small threshold. This is called partial unemployment — it's almost always worth doing freelance work anyway since you keep some benefit plus the income. Report honestly; underreporting is fraud.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" role="button" aria-expanded="false">Is my data private?<div class="faq-icon" aria-hidden="true">+</div></div>
+      <div class="faq-a">100% private. All calculations run entirely in your browser. Nothing is sent to any server. LayoffBudget has no backend, no accounts, and no analytics on your personal numbers. Your financial data never leaves your device. Use the Export button to save a backup file.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" role="button" aria-expanded="false">How does a layoff affect my taxes?<div class="faq-icon" aria-hidden="true">+</div></div>
+      <div class="faq-a">Unemployment benefits and severance are both taxable federal income. However, your lower annual income may put you in a lower bracket, partially offsetting this. For freelance income, you'll owe self-employment tax (15.3%). Consider quarterly estimated payments if you earn significant freelance income during your search.</div>
+    </div>
+  </div>
+
+  <div class="ad-slot" aria-label="Advertisement">Advertisement</div>
+</div>
+
+<footer>
+  <p>© 2025 LayoffBudget &nbsp;·&nbsp; For informational purposes only &nbsp;·&nbsp; Not financial or legal advice &nbsp;·&nbsp;
+  <a href="/privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="/terms.html">Terms</a></p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+'use strict';
+// ── Constants ──
+const SK='layoff_v11';
+const UI_DATA={
+  MA:[.5,1362,30],DC:[.6,1049,26],WA:[.6,1019,26],MN:[.5,906,26],NJ:[.6,875,26],CT:[.5,858,26],
+  ND:[.6,843,26],VT:[.5,823,26],OR:[.5,812,26],CO:[.55,781,26],HI:[.5,769,26],RI:[.6,762,26],
+  CA:[.6,751,26],UT:[.6,731,26],NY:[.5,713,26],IL:[.47,693,26],SD:[.5,693,26],IA:[.55,668,26],
+  OH:[.5,647,26],TX:[.47,631,26],KY:[.52,626,26],WI:[.5,627,26],PA:[.5,614,26],MI:[.43,614,20],
+  FL:[.45,600,12],WY:[.5,595,26],KS:[.55,560,26],VA:[.5,538,24],OK:[.5,539,26],ME:[.5,531,26],
+  NM:[.53,511,26],ID:[.55,498,26],NV:[.5,469,26],NE:[.5,462,26],DE:[.5,450,26],AR:[.44,451,16],
+  MD:[.45,430,26],NH:[.45,427,26],IN:[.47,390,26],AK:[.46,370,26],GA:[.37,365,14],NC:[.4,350,12],
+  SC:[.33,326,20],AZ:[.44,320,26],MO:[.4,320,20],TN:[.4,275,26],AL:[.25,275,26],LA:[.24,247,26],
+  MS:[.22,235,26],MT:[.6,740,28],WV:[.55,648,26]
+};
+const COBRA={individual:685,family:1950};
+const ACA_EST={individual:420,family:890};
+
+// ── Helpers ──
+function fmt(n){return'$'+Math.round(n).toLocaleString('en-US')}
+function sv(k,v){try{localStorage.setItem(SK+'_'+k,JSON.stringify(v))}catch(e){}}
+function ld(k,def){try{const r=localStorage.getItem(SK+'_'+k);return r!=null?JSON.parse(r):def}catch(e){return def}}
+function showToast(msg,ms=2800){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),ms);
+}
+
+// ── Onboarding ──
+if(!ld('visited',false)){
+  document.getElementById('empathy-banner').style.display='block';
+  sv('visited',true);
+}
+document.getElementById('empathy-close').addEventListener('click',()=>{
+  document.getElementById('empathy-banner').style.display='none';
+});
+
+// ── Checklist persistence ──
+let checkedItems=ld('checked',{});
+function initChecklist(){
+  document.querySelectorAll('.cl-item').forEach(item=>{
+    const id=item.dataset.id;
+    if(checkedItems[id]){item.classList.add('checked');item.setAttribute('aria-checked','true')}
+    item.addEventListener('click',()=>toggleCheck(item));
+    item.addEventListener('keydown',e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();toggleCheck(item)}});
+  });
+  updateCheckProgress();
+}
+function toggleCheck(item){
+  const id=item.dataset.id;
+  item.classList.toggle('checked');
+  const isChecked=item.classList.contains('checked');
+  item.setAttribute('aria-checked',isChecked);
+  checkedItems[id]=isChecked;
+  sv('checked',checkedItems);
+  updateCheckProgress();
+}
+function updateCheckProgress(){
+  const total=document.querySelectorAll('.cl-item').length;
+  const done=document.querySelectorAll('.cl-item.checked').length;
+  const pct=done/total*100;
+  document.getElementById('cl-fill').style.width=pct+'%';
+  document.getElementById('cl-label').textContent=`${done} of ${total} steps complete${done===total?' — Great job! 🎉':''}`;
+}
+initChecklist();
+
+// ── Persist inputs ──
+const INPUT_IDS=['savings','severance-weeks','prior-salary','rent','food','utilities','transport','subscriptions','debt','other-expenses','state','coverage','had-insurance'];
+function saveInputs(){INPUT_IDS.forEach(id=>{const el=document.getElementById(id);if(el)sv('inp_'+id,el.value)})}
+function loadInputs(){INPUT_IDS.forEach(id=>{const el=document.getElementById(id);if(!el)return;const v=ld('inp_'+id,null);if(v!=null)el.value=v})}
+loadInputs();
+
+// ── Main calculation ──
+let calcTimeout=null;
+function scheduleCalc(){
+  saveInputs();
+  clearTimeout(calcTimeout);
+  calcTimeout=setTimeout(calculate,120);
+}
+INPUT_IDS.forEach(id=>{
+  const el=document.getElementById(id);
+  if(el){el.addEventListener('input',scheduleCalc);el.addEventListener('change',scheduleCalc)}
+});
+
+function calculate(){
+  const savings=parseFloat(document.getElementById('savings').value)||0;
+  const sevWks=parseFloat(document.getElementById('severance-weeks').value)||0;
+  const salary=parseFloat(document.getElementById('prior-salary').value)||0;
+  const rent=parseFloat(document.getElementById('rent').value)||0;
+  const food=parseFloat(document.getElementById('food').value)||0;
+  const utils=parseFloat(document.getElementById('utilities').value)||0;
+  const trans=parseFloat(document.getElementById('transport').value)||0;
+  const subs=parseFloat(document.getElementById('subscriptions').value)||0;
+  const debt=parseFloat(document.getElementById('debt').value)||0;
+  const other=parseFloat(document.getElementById('other-expenses').value)||0;
+  const state=document.getElementById('state').value;
+  const cov=document.getElementById('coverage').value;
+  const hadIns=document.getElementById('had-insurance').value==='yes';
+
+  const monthlyExp=rent+food+utils+trans+subs+debt+other;
+  const wkWage=salary/52;
+  const ui=UI_DATA[state]||[.45,450,26];
+  const uiWkly=Math.min(wkWage*ui[0],ui[1]);
+  const uiMo=uiWkly*(52/12);
+  const uiWks=ui[2];
+  const sevTotal=sevWks*(salary/52);
+
+  const cobraMo=cov==='family'?COBRA.family:COBRA.individual;
+  const acaMo=cov==='family'?ACA_EST.family:ACA_EST.individual;
+  const netBurnUI=Math.max(0,monthlyExp-uiMo);
+
+  // Timeline
+  let balance=savings+sevTotal;
+  const maxBal=balance||1;
+  let runwayMonths=0;
+  const timeline=[];
+  const uiMosLeft=uiWks/(52/12);
+  for(let m=1;m<=36;m++){
+    const isUI=m<=uiMosLeft;
+    const uiBen=isUI?uiMo:0;
+    const burn=monthlyExp-uiBen;
+    balance-=burn;
+    const pct=Math.max(0,Math.min(100,balance/maxBal*100));
+    timeline.push({m,uiBen,burn,bal:Math.max(0,balance),pct,solvent:balance>0});
+    if(balance<=0&&runwayMonths===0)runwayMonths=m-0.5;
+  }
+  if(runwayMonths===0)runwayMonths=36;
+
+  // ── Gauge update ──
+  const gaugeNeedle=document.getElementById('gauge-needle');
+  const rgNum=document.getElementById('rg-number');
+  const rgUnit=document.getElementById('rg-unit');
+  const rgUrgency=document.getElementById('rg-urgency');
+  const rgSub=document.getElementById('rg-sub');
+
+  rgNum.textContent=runwayMonths>=36?'36+':runwayMonths.toFixed(1);
+  rgUnit.textContent=runwayMonths===1?'month':'months';
+
+  // needle position: 0=left(critical) to 100=right(stable), clamp 0–36 months to 0–100%
+  const needlePct=Math.min(98,Math.max(2,(runwayMonths/24)*100));
+  gaugeNeedle.style.left=needlePct+'%';
+
+  let urgencyText,urgencyBg,urgencyColor,numColor;
+  if(runwayMonths>=12){
+    urgencyText='🟢 STABLE';urgencyBg='var(--green-light)';urgencyColor='var(--green-dark)';numColor='var(--green-dark)';
+    rgSub.textContent=`You have strong runway. Job search from a position of calm. Set a decision checkpoint at month ${Math.floor(runwayMonths*0.6)}.`;
+  } else if(runwayMonths>=6){
+    urgencyText='🟡 MODERATE';urgencyBg='var(--amber-light)';urgencyColor='var(--amber-dark)';numColor='var(--amber-dark)';
+    rgSub.textContent=`Solid but not unlimited. Start your job search actively now. Cut non-essentials to buy more time.`;
+  } else if(runwayMonths>=3){
+    urgencyText='🟠 TIGHT';urgencyBg='var(--orange-light)';urgencyColor='var(--orange-dark)';numColor='var(--orange-dark)';
+    rgSub.textContent=`Under 6 months — act quickly. File for unemployment today, cut expenses now, and begin job searching immediately.`;
+  } else {
+    urgencyText='🔴 CRITICAL';urgencyBg='var(--red-light)';urgencyColor='var(--red-dark)';numColor='var(--red-dark)';
+    rgSub.textContent=`Urgent action needed. File for unemployment today, call debt servicers, cut all non-essentials, and explore any bridge income options.`;
+  }
+  rgNum.style.color=numColor;
+  rgUrgency.textContent=urgencyText;
+  rgUrgency.style.background=urgencyBg;
+  rgUrgency.style.color=urgencyColor;
+
+  // ── Sidebar stats ──
+  const uiEl=document.getElementById('ui-weekly');
+  uiEl.textContent=fmt(uiWkly)+'/wk';
+  uiEl.className='stat-value '+(uiWkly>600?'stat-green':uiWkly>300?'stat-amber':'stat-red');
+  document.getElementById('ui-sub').textContent=`≈${fmt(uiMo)}/mo · up to ${uiWks} wks in ${state}`;
+
+  document.getElementById('severance-total').textContent=sevWks>0?fmt(sevTotal):'None';
+  document.getElementById('severance-sub').textContent=sevWks>0?
+    `${sevWks} weeks · ${(sevTotal/monthlyExp).toFixed(1)} months of expenses`:'Negotiate before signing if possible';
+
+  if(hadIns){
+    document.getElementById('cobra-cost').textContent=fmt(cobraMo)+' COBRA';
+    document.getElementById('cobra-sub').textContent=`ACA est. ${fmt(acaMo)}/mo — compare within 60 days`;
+  } else {
+    document.getElementById('cobra-cost').textContent='Already covered';
+    document.getElementById('cobra-sub').textContent='No COBRA decision needed';
+  }
+
+  const burnEl=document.getElementById('burn-rate');
+  burnEl.textContent=fmt(monthlyExp)+'/mo';
+
+  const netEl=document.getElementById('net-burn');
+  if(netBurnUI>0){
+    netEl.textContent='-'+fmt(netBurnUI)+'/mo';
+    netEl.className='stat-value stat-red';
+    document.getElementById('net-burn-sub').textContent='Monthly shortfall after UI benefits';
+  } else {
+    netEl.textContent='Surplus!';
+    netEl.className='stat-value stat-green';
+    document.getElementById('net-burn-sub').textContent='UI benefits cover all expenses while active';
+  }
+
+  // ── Action plan ──
+  const ap=document.getElementById('action-plan');
+  const acts=[];
+  acts.push({type:'urgent',icon:'🚨',title:'File for unemployment TODAY',
+    text:`File online with ${state}'s unemployment office immediately. Your estimated weekly benefit: ${fmt(uiWkly)}. Every day of delay = permanently lost money. Waiting period is typically 1 week before payments begin.`});
+  if(hadIns) acts.push({type:'urgent',icon:'🏥',title:'Health insurance: decide within 60 days',
+    text:`COBRA: ${fmt(cobraMo)}/mo · ACA Marketplace: ${fmt(acaMo)}/mo. Your layoff is a qualifying life event. Compare at healthcare.gov. If your income will drop significantly, ACA subsidies may reduce your cost dramatically.`});
+  if(sevWks>0) acts.push({type:'soon',icon:'📄',title:`Review your ${sevWks}-week severance before signing`,
+    text:`Total value: ${fmt(sevTotal)}. You have 21–45 days to sign. Consider asking for more weeks, extended benefits, or accelerated equity. An employment attorney consultation often pays for itself.`});
+  if(runwayMonths<6) acts.push({type:'urgent',icon:'✂️',title:'Cut expenses immediately — runway is tight',
+    text:`Target: reduce monthly burn from ${fmt(monthlyExp)} to ${fmt(monthlyExp*0.8)}. Pause all subscriptions, call debt servicers about hardship deferrals, and consider negotiating rent.`});
+  else acts.push({type:'soon',icon:'✂️',title:'Audit and trim non-essentials',
+    text:`Even cutting ${fmt(subs*0.6)}/mo in subscriptions extends your runway. Pause before you're desperate — it's easier to cancel than to scramble.`});
+  acts.push({type:'plan',icon:'📊',title:'Set a job search decision checkpoint',
+    text:`With ${runwayMonths.toFixed(1)} months of runway, set a hard checkpoint at month ${Math.max(2,Math.floor(runwayMonths*0.55))} to evaluate your progress and broaden your search if needed.`});
+  acts.push({type:'plan',icon:'🚫',title:'Protect your 401(k) — last resort only',
+    text:`Early withdrawal = 30–40% loss to penalties and taxes. Roll to an IRA if you leave the company. Only access as an absolute last resort after exhausting all other options.`});
+
+  ap.innerHTML=acts.map(a=>`
+    <div class="priority-card priority-${a.type}" role="listitem">
+      <div class="p-title">${a.icon} ${a.title}</div>
+      <div class="p-text">${a.text}</div>
+    </div>
+  `).join('');
+
+  // ── Timeline ──
+  const visRows=timeline.slice(0,Math.min(24,Math.max(6,timeline.findIndex(t=>!t.solvent)+3)||24));
+  const tblHTML=`
+    <div class="timeline-table-wrap">
+    <table class="timeline-table" aria-label="Monthly survival timeline">
+      <thead><tr>
+        <th>Month</th><th>UI Benefit</th><th>Net Cost</th><th>Balance</th><th>Runway</th><th>Status</th>
+      </tr></thead>
+      <tbody>
+        ${visRows.map(t=>{
+          const sc=t.bal>monthlyExp*3?'t-stable':t.bal>monthlyExp?'t-watch':t.solvent?'t-critical':'t-depleted';
+          const st=t.bal>monthlyExp*3?'Stable':t.bal>monthlyExp?'Watch':t.solvent?'Critical':'Depleted';
+          const bc=t.bal>monthlyExp*3?'#10b981':t.bal>monthlyExp?'#f59e0b':'#ef4444';
+          return`<tr>
+            <td><strong>Month ${t.m}</strong></td>
+            <td style="color:${t.uiBen>0?'var(--green-dark)':'var(--muted)'}">${t.uiBen>0?'+'+fmt(t.uiBen):'—'}</td>
+            <td style="color:var(--red-dark)">${t.solvent?'−'+fmt(t.burn):'—'}</td>
+            <td><strong>${t.solvent?fmt(t.bal):'$0'}</strong></td>
+            <td><div class="tl-bar"><div class="tl-bar-fill" style="width:${t.pct}%;background:${bc}"></div></div></td>
+            <td><span class="t-badge ${sc}">${st}</span></td>
+          </tr>`;
+        }).join('')}
+      </tbody>
+    </table>
+    </div>
+    <div class="timeline-mobile" aria-label="Monthly survival timeline (mobile)">
+      ${visRows.map(t=>{
+        const sc=t.bal>monthlyExp*3?'t-stable':t.bal>monthlyExp?'t-watch':t.solvent?'t-critical':'t-depleted';
+        const st=t.bal>monthlyExp*3?'Stable':t.bal>monthlyExp?'Watch':t.solvent?'Critical':'Depleted';
+        const bc=t.bal>monthlyExp*3?'#10b981':t.bal>monthlyExp?'#f59e0b':'#ef4444';
+        return`<div class="tm-card" role="row">
+          <div class="tm-month">Month ${t.m}</div>
+          <span class="t-badge ${sc}">${st}</span>
+          <div class="tm-bar-wrap"><div class="tl-bar"><div class="tl-bar-fill" style="width:${t.pct}%;background:${bc}"></div></div></div>
+          <div class="tm-details" style="grid-column:1/-1">
+            <span class="tm-detail">💰 Balance: <strong>${t.solvent?fmt(t.bal):'$0'}</strong></span>
+            ${t.uiBen>0?`<span class="tm-detail" style="color:var(--green-dark)">📬 +${fmt(t.uiBen)} UI</span>`:''}
+            <span class="tm-detail" style="color:var(--red-dark)">🔻 Cost: ${t.solvent?fmt(t.burn):'—'}</span>
+          </div>
+        </div>`;
+      }).join('')}
+    </div>
+    <div style="padding:.85rem 1.4rem;border-top:1px solid var(--border);font-size:12px;color:var(--muted)">
+      Assumes constant expenses · UI benefits paid for up to ${uiWks} weeks in ${state} · Estimates only.
+    </div>
+  `;
+  document.getElementById('timeline-body').innerHTML=tblHTML;
+
+  // Store results for sharing
+  window._layoffResults={runwayMonths,monthlyExp,uiWkly,sevWks,sevTotal,state};
+}
+
+// ── Export / Import / Clear ──
+document.getElementById('export-btn').addEventListener('click',()=>{
+  const data={};
+  INPUT_IDS.forEach(id=>{const el=document.getElementById(id);if(el)data[id]=el.value});
+  data.checked=checkedItems;
+  const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);
+  a.download='layoff-scenario.json';a.click();
+  showToast('✓ Scenario exported');
+});
+document.getElementById('import-btn').addEventListener('click',()=>document.getElementById('import-file').click());
+document.getElementById('import-file').addEventListener('change',e=>{
+  const f=e.target.files[0];if(!f)return;
+  const reader=new FileReader();
+  reader.onload=ev=>{
+    try{
+      const d=JSON.parse(ev.target.result);
+      INPUT_IDS.forEach(id=>{const el=document.getElementById(id);if(el&&d[id]!=null)el.value=d[id]});
+      if(d.checked)checkedItems=d.checked;
+      saveInputs();initChecklist();calculate();
+      showToast('✓ Scenario imported');
+    }catch(err){showToast('❌ Invalid file')}
+  };
+  reader.readAsText(f);
+  e.target.value='';
+});
+document.getElementById('clear-btn').addEventListener('click',()=>{
+  if(!confirm('Clear all saved data and reset inputs?'))return;
+  try{Object.keys(localStorage).filter(k=>k.startsWith(SK)).forEach(k=>localStorage.removeItem(k))}catch(e){}
+  checkedItems={};
+  INPUT_IDS.forEach(id=>{const el=document.getElementById(id);if(el)el.value=el.defaultValue||''});
+  initChecklist();calculate();
+  showToast('Data cleared 🌱');
+});
+
+// ── Share buttons ──
+document.getElementById('sh-reddit').addEventListener('click',()=>{
+  const url=encodeURIComponent(location.href);
+  const t=encodeURIComponent('Free Layoff Survival Calculator — unemployment estimate, COBRA costs, month-by-month timeline & immediate action plan');
+  window.open(`https://reddit.com/submit?url=${url}&title=${t}`,'_blank');
+});
+document.getElementById('sh-linkedin').addEventListener('click',()=>{
+  window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(location.href)}`,'_blank');
+});
+document.getElementById('sh-twitter').addEventListener('click',()=>{
+  const t=encodeURIComponent('Just calculated my financial runway after a layoff with this free tool — it shows unemployment estimate, COBRA vs ACA costs & a month-by-month plan. Really useful.');
+  window.open(`https://twitter.com/intent/tweet?text=${t}&url=${encodeURIComponent(location.href)}`,'_blank');
+});
+document.getElementById('sh-copy').addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText(location.href);showToast('✓ Link copied — share it with someone who needs it')}
+  catch(e){showToast('Copy the URL from your browser bar')}
+});
+document.getElementById('sh-result').addEventListener('click',async()=>{
+  const r=window._layoffResults;
+  if(!r){showToast('Run the calculator first');return}
+  const months=r.runwayMonths>=36?'36+':r.runwayMonths.toFixed(1);
+  const urgency=r.runwayMonths>=12?'STABLE':r.runwayMonths>=6?'MODERATE':r.runwayMonths>=3?'TIGHT':'CRITICAL';
+  const txt=`📊 My Layoff Survival Plan (via LayoffBudget.com):\n\n`+
+    `🛡️ Financial runway: ${months} months (${urgency})\n`+
+    `📬 Estimated unemployment: $${Math.round(r.uiWkly)}/week in ${r.state}\n`+
+    `🔻 Monthly burn rate: $${Math.round(r.monthlyExp).toLocaleString()}\n`+
+    (r.sevWks>0?`💰 Severance: ${r.sevWks} weeks = $${Math.round(r.sevTotal).toLocaleString()}\n`:'')+
+    `\nUse this free calculator to see your own numbers:\n${location.href}`;
+  try{await navigator.clipboard.writeText(txt);showToast('✓ Results copied — paste anywhere!')}
+  catch(e){showToast('Copy failed — try the Copy Link button')}
+});
+
+// ── FAQ ──
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const open=q.classList.contains('open');
+    document.querySelectorAll('.faq-q').forEach(x=>{x.classList.remove('open');x.setAttribute('aria-expanded','false');x.nextElementSibling.classList.remove('open')});
+    if(!open){q.classList.add('open');q.setAttribute('aria-expanded','true');q.nextElementSibling.classList.add('open')}
+  });
+});
+
+// ── Init ──
+calculate();
+</script>
+</body>
+</html>
