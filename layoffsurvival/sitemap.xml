@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Core pages -->
+  <url><loc>https://layoffsurvival.com/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://layoffsurvival.com/about.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://layoffsurvival.com/privacy.html</loc><lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://layoffsurvival.com/terms.html</loc><lastmod>2026-07-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
+  <!-- Blog -->
+  <url><loc>https://layoffsurvival.com/blog/</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/blog/what-to-do-first-48-hours-after-layoff.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/blog/how-long-will-money-last-after-layoff.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/blog/cobra-vs-aca-after-layoff.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/blog/how-to-negotiate-severance.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/blog/unemployment-benefits-by-state.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <!-- Company Layoff Pages -->
+  <url><loc>https://layoffsurvival.com/amazon-layoffs-2026/</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://layoffsurvival.com/meta-layoffs-2026/</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://layoffsurvival.com/microsoft-layoffs-2026/</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://layoffsurvival.com/google-layoffs-2026/</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://layoffsurvival.com/intel-layoffs-2026/</loc><lastmod>2026-07-01</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+
+  <!-- 50 State Unemployment Pages -->
+  <url><loc>https://layoffsurvival.com/unemployment-alabama/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-alaska/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-arizona/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-arkansas/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-california/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-colorado/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-connecticut/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-delaware/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-florida/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-georgia/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-hawaii/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-idaho/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-illinois/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-indiana/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-iowa/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-kansas/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-kentucky/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-louisiana/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-maine/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-maryland/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-massachusetts/</loc><lastmod>2026-07-01</lastmd><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-michigan/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-minnesota/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-mississippi/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-missouri/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-montana/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-nebraska/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-nevada/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-new-hampshire/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-new-jersey/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-new-mexico/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-new-york/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-north-carolina/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-north-dakota/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-ohio/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-oklahoma/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-oregon/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-pennsylvania/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-rhode-island/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-south-carolina/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-south-dakota/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-tennessee/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-texas/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-utah/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-vermont/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-virginia/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-washington/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-west-virginia/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-wisconsin/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://layoffsurvival.com/unemployment-wyoming/</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+</urlset>
