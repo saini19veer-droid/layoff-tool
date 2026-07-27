@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Layoff Budget Cutter 2026 – Cut Expenses & Extend Your Runway | LayoffSurvival</title>
+<meta name="description" content="Free layoff budget cutter tool. Enter your monthly expenses and instantly see what to cut first, how much each cut saves, and exactly how many days of runway each decision adds after a layoff."/>
+<meta name="keywords" content="layoff budget cutter, cut expenses after layoff, layoff survival budget, reduce spending after job loss, how to stretch money after layoff 2026"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://layoffsurvival.com/layoff-budget-cutter/"/>
+<meta property="og:title" content="Layoff Budget Cutter — See Exactly What to Cut and How Many Days It Buys You"/>
+<meta property="og:description" content="Enter your expenses. Instantly see what to cut first, how much it saves, and how many days of runway each cut adds. Free, private, instant."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://layoffsurvival.com/layoff-budget-cutter/"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Layoff Budget Cutter","description":"Interactive tool that shows you exactly which expenses to cut after a layoff and how many days of financial runway each cut adds.","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What expenses should I cut first after a layoff?","acceptedAnswer":{"@type":"Answer","text":"Cut in this order: subscriptions and streaming services first (small but immediate), then dining out and non-essential shopping, then car costs and insurance (shop around), then housing if you're renting. Never cancel health insurance — use ACA marketplace instead of COBRA if cost is a concern."}},{"@type":"Question","name":"How much should I reduce my spending after losing a job?","acceptedAnswer":{"@type":"Answer","text":"Financial advisors typically recommend cutting to 50-60% of your previous spending during a job search. Focus on fixed essential costs: housing, utilities, groceries, minimum debt payments, and health insurance. Everything else is negotiable."}},{"@type":"Question","name":"Should I cancel my 401k contributions after a layoff?","acceptedAnswer":{"@type":"Answer","text":"If you've been laid off, employer contributions stop automatically. You cannot contribute to a 401k without employment income. Focus on preserving cash — but do not withdraw from your 401k early unless absolutely necessary, due to taxes and the 10% penalty."}}]}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073124583870713" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blue:#1d4ed8;--blue-light:#dbeafe;--blue-mid:#3b82f6;--blue-dark:#1e3a8a;
+  --green:#10b981;--green-light:#d1fae5;--green-dark:#059669;
+  --amber:#f59e0b;--amber-light:#fef3c7;--amber-dark:#d97706;
+  --red:#ef4444;--red-light:#fee2e2;--red-dark:#dc2626;
+  --purple:#8b5cf6;--purple-light:#ede9fe;--purple-dark:#7c3aed;
+  --navy:#0f172a;--slate:#475569;--muted:#94a3b8;--light:#cbd5e1;
+  --border:#e2e8f0;--faint:#f8fafc;--white:#fff;--bg:#f0f4f8;
+  --shadow-sm:0 1px 3px rgba(0,0,0,.07);
+  --shadow-md:0 4px 16px rgba(0,0,0,.09);
+  --shadow-lg:0 20px 40px rgba(0,0,0,.12);
+  --r-sm:8px;--r-md:14px;--r-lg:20px;--r-xl:28px;
+  --font:'Inter',system-ui,sans-serif;
+  --display:'Space Grotesk',system-ui,sans-serif;
+}
+body{font-family:var(--font);background:var(--bg);color:var(--navy);line-height:1.6;font-size:16px;min-height:100vh}
+body::before{content:'';position:fixed;inset:0;background:linear-gradient(135deg,#f0f4f8 0%,#e8edf5 50%,#edf4ff 100%);z-index:-1}
+::-webkit-scrollbar{height:5px;width:5px}
+::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:10px}
+
+/* ── Header ── */
+.site-header{background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.8);padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:62px;position:sticky;top:0;z-index:300;box-shadow:0 2px 12px rgba(29,78,216,.08)}
+.logo{font-family:var(--display);font-weight:800;font-size:18px;color:var(--blue);text-decoration:none;letter-spacing:-.5px;display:flex;align-items:center;gap:9px}
+.logo-icon{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,#1d4ed8,#1e3a8a);display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 4px 10px rgba(29,78,216,.3);flex-shrink:0}
+.header-nav{display:flex;align-items:center;gap:4px}
+.header-nav-link{font-size:13px;font-weight:600;color:var(--slate);text-decoration:none;padding:5px 12px;border-radius:20px;transition:all .15s}
+.header-nav-link:hover{background:var(--blue-light);color:var(--blue-dark)}
+.header-badge{font-size:11px;font-weight:700;background:var(--amber-light);color:var(--amber-dark);padding:4px 11px;border-radius:20px;white-space:nowrap}
+.container{max-width:1000px;margin:0 auto;padding:0 1.25rem}
+
+/* ── Hero ── */
+.hero{padding:2rem 0 1.25rem}
+.breadcrumb{font-size:12px;color:var(--muted);margin-bottom:1rem}
+.breadcrumb a{color:var(--blue);text-decoration:none}
+.hero-eyebrow{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--blue-mid);margin-bottom:.75rem;display:flex;align-items:center;gap:8px}
+.hero-line{display:block;height:1px;width:32px;background:var(--blue-mid);opacity:.4}
+.hero h1{font-family:var(--display);font-size:clamp(22px,3.5vw,36px);font-weight:800;line-height:1.15;letter-spacing:-.75px;margin-bottom:.7rem}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero p{font-size:15px;color:var(--slate);max-width:640px;line-height:1.7;margin-bottom:1rem}
+.hero-badges{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:1.25rem}
+.hero-badge{background:rgba(255,255,255,.9);color:var(--slate);font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;border:1px solid var(--border);box-shadow:var(--shadow-sm)}
+
+/* ── Ad ── */
+.ad-slot{background:rgba(255,255,255,.7);border:1px dashed #93c5fd;border-radius:var(--r-md);text-align:center;padding:.85rem 1rem;color:var(--muted);font-size:13px;margin:1.25rem 0}
+
+/* ── Runway summary bar ── */
+.runway-bar{background:linear-gradient(135deg,#0f172a,#1e3a8a);border-radius:var(--r-xl);padding:1.4rem 1.75rem;color:#fff;margin-bottom:1.5rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;box-shadow:0 8px 32px rgba(29,78,216,.3)}
+@media(max-width:640px){.runway-bar{grid-template-columns:repeat(2,1fr)}}
+.rw-stat{}
+.rw-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;opacity:.6;margin-bottom:.2rem}
+.rw-value{font-family:var(--display);font-size:22px;font-weight:800;line-height:1.1}
+.rw-sub{font-size:11px;opacity:.7;margin-top:.15rem}
+.rw-value.positive{color:#6ee7b7}
+.rw-value.neutral{color:#fcd34d}
+.rw-value.critical{color:#fca5a5}
+
+/* ── Layout ── */
+.tool-layout{display:grid;grid-template-columns:1fr 320px;gap:1.5rem;align-items:start}
+@media(max-width:860px){.tool-layout{grid-template-columns:1fr}}
+
+/* ── Card ── */
+.card{background:var(--white);border-radius:var(--r-xl);box-shadow:var(--shadow-lg);border:1px solid rgba(255,255,255,.9);overflow:hidden;margin-bottom:1.25rem}
+.card-header{padding:1rem 1.5rem;border-bottom:1px solid var(--border);background:var(--faint);display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap}
+.card-title{font-family:var(--display);font-size:15px;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:8px}
+.card-body{padding:1.25rem 1.5rem}
+@media(max-width:600px){.card-body,.card-header{padding:1rem 1.1rem}}
+
+/* ── Savings input setup ── */
+.savings-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:1rem}
+@media(max-width:480px){.savings-row{grid-template-columns:1fr}}
+label.field-label{font-size:13px;font-weight:600;color:var(--slate);display:block;margin-bottom:4px}
+input[type=number]{padding:9px 13px;border:1.5px solid var(--border);border-radius:var(--r-sm);font-size:14px;font-family:var(--font);color:var(--navy);background:var(--faint);outline:none;transition:all .18s;width:100%;-webkit-appearance:none}
+input[type=number]:focus{border-color:var(--blue);background:#fff;box-shadow:0 0 0 3px rgba(29,78,216,.09)}
+
+/* ── Category section ── */
+.cat-section{margin-bottom:1.5rem}
+.cat-heading{font-family:var(--display);font-size:13px;font-weight:700;color:var(--navy);padding:.55rem .75rem;background:var(--faint);border-radius:var(--r-sm);margin-bottom:.6rem;display:flex;align-items:center;justify-content:space-between;border:1px solid var(--border)}
+.cat-heading-left{display:flex;align-items:center;gap:7px}
+.cat-total{font-size:12px;font-weight:700;color:var(--muted)}
+
+/* ── Expense row ── */
+.expense-row{display:grid;grid-template-columns:auto 1fr 120px 100px;gap:8px;align-items:center;padding:.55rem .5rem;border-radius:var(--r-sm);transition:background .15s;margin-bottom:3px}
+.expense-row:hover{background:var(--faint)}
+@media(max-width:600px){.expense-row{grid-template-columns:auto 1fr 90px 80px;gap:5px}}
+.exp-toggle{width:36px;height:20px;border-radius:10px;border:none;cursor:pointer;position:relative;flex-shrink:0;transition:background .2s}
+.exp-toggle.on{background:var(--green)}
+.exp-toggle.off{background:#e2e8f0}
+.exp-toggle::after{content:'';position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:#fff;transition:left .2s;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.exp-toggle.on::after{left:18px}
+.exp-name{font-size:13px;font-weight:500;color:var(--navy)}
+.exp-name.off-state{color:var(--muted);text-decoration:line-through}
+.exp-amount{padding:5px 9px;border:1.5px solid var(--border);border-radius:6px;font-size:13px;font-family:var(--font);color:var(--navy);background:var(--faint);outline:none;transition:all .15s;width:100%;text-align:right}
+.exp-amount:focus{border-color:var(--blue);background:#fff;box-shadow:0 0 0 2px rgba(29,78,216,.09)}
+.exp-days{font-size:12px;font-weight:700;text-align:right;white-space:nowrap;padding:4px 8px;border-radius:20px}
+.exp-days.gain{background:var(--green-light);color:var(--green-dark)}
+.exp-days.zero{color:var(--muted);font-weight:500}
+
+/* ── Cut priority cards ── */
+.priority-card{border-radius:var(--r-lg);padding:1rem 1.2rem;margin-bottom:.75rem;border:1px solid}
+.priority-card.easy{background:#f0fdf4;border-color:#bbf7d0}
+.priority-card.medium{background:var(--amber-light);border-color:#fcd34d}
+.priority-card.hard{background:var(--red-light);border-color:#fca5a5}
+.priority-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem}
+.priority-card.easy .priority-label{color:var(--green-dark)}
+.priority-card.medium .priority-label{color:var(--amber-dark)}
+.priority-card.hard .priority-label{color:var(--red-dark)}
+.priority-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:.2rem}
+.priority-text{font-size:12px;color:var(--slate);line-height:1.5}
+
+/* ── Sidebar ── */
+.sidebar-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.1rem 1.25rem;margin-bottom:1rem;box-shadow:var(--shadow-sm)}
+.sidebar-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:.4rem}
+.sidebar-title{font-family:var(--display);font-size:14px;font-weight:700;color:var(--navy);margin-bottom:.35rem}
+.sidebar-text{font-size:13px;color:var(--slate);line-height:1.6}
+.stat-big{font-family:var(--display);font-size:28px;font-weight:800;color:var(--blue-dark);line-height:1;margin:.2rem 0 .1rem}
+
+/* ── Cut summary ── */
+.cut-summary{background:linear-gradient(135deg,var(--green-dark),#047857);border-radius:var(--r-xl);padding:1.4rem 1.75rem;color:#fff;margin-bottom:1.5rem;display:none}
+.cut-summary.visible{display:block}
+.cut-summary-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:.85rem}
+@media(max-width:500px){.cut-summary-grid{grid-template-columns:repeat(2,1fr)}}
+.cs-stat-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;opacity:.7;margin-bottom:.2rem}
+.cs-stat-value{font-family:var(--display);font-size:22px;font-weight:800;line-height:1.1}
+
+/* ── Action list ── */
+.action-list{list-style:none;padding:0}
+.action-item{display:flex;align-items:flex-start;gap:10px;padding:.7rem 0;border-bottom:1px solid var(--border)}
+.action-item:last-child{border-bottom:none}
+.action-num{width:24px;height:24px;border-radius:50%;background:var(--blue-light);color:var(--blue-dark);font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.action-body{}
+.action-title{font-size:13px;font-weight:700;color:var(--navy)}
+.action-text{font-size:12px;color:var(--slate);line-height:1.5;margin-top:.15rem}
+.action-savings{display:inline-block;background:var(--green-light);color:var(--green-dark);font-size:11px;font-weight:700;padding:2px 8px;border-radius:10px;margin-top:.25rem}
+
+/* ── FAQ / Content ── */
+.content-card{background:var(--white);border-radius:var(--r-lg);border:1px solid var(--border);padding:1.75rem;margin-bottom:1.5rem;box-shadow:var(--shadow-md)}
+.content-card h2{font-family:var(--display);font-size:19px;font-weight:700;color:var(--navy);margin:1.5rem 0 .6rem;line-height:1.3}
+.content-card h2:first-child{margin-top:0}
+.content-card p,.content-card li{color:var(--slate);margin-bottom:.75rem;line-height:1.75;font-size:15px}
+.content-card ul{padding-left:1.25rem;margin-bottom:.9rem}
+.content-card strong{color:var(--navy);font-weight:600}
+.faq-card{background:var(--white);border-radius:var(--r-lg);border:1px solid var(--border);padding:1.75rem;margin-bottom:1.5rem;box-shadow:var(--shadow-md)}
+.faq-card h2{font-family:var(--display);font-size:19px;font-weight:700;margin-bottom:1rem}
+.faq-item{border-top:1px solid var(--border)}
+.faq-item:last-child{border-bottom:1px solid var(--border)}
+.faq-q{font-weight:600;font-size:14px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:.85rem 0;user-select:none;color:var(--navy);transition:color .15s}
+.faq-q:hover{color:var(--blue)}
+.faq-icon{width:22px;height:22px;border-radius:50%;background:var(--blue-light);border:1.5px solid #93c5fd;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:13px;color:var(--blue);transition:transform .2s}
+.faq-q.open .faq-icon{transform:rotate(45deg)}
+.faq-a{font-size:14px;color:var(--slate);padding-bottom:.85rem;display:none;line-height:1.75}
+.faq-a.open{display:block}
+
+/* ── Share ── */
+.share-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:.75rem}
+.share-btn{padding:7px 15px;border-radius:20px;border:none;font-size:12px;font-weight:700;cursor:pointer;font-family:var(--font);transition:all .15s;display:inline-flex;align-items:center;gap:5px}
+.share-btn:hover{transform:translateY(-1px)}
+.sh-reddit{background:#ff4500;color:#fff}
+.sh-copy{background:var(--white);border:1.5px solid var(--border)!important;color:var(--slate)}
+
+/* ── Toast ── */
+.toast{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%) translateY(8px);background:rgba(15,23,42,.96);color:#fff;padding:.7rem 1.4rem;border-radius:30px;font-size:14px;font-weight:600;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:999;opacity:0;transition:all .25s;pointer-events:none;max-width:90vw;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+footer{background:rgba(255,255,255,.8);backdrop-filter:blur(8px);border-top:1px solid var(--border);padding:1.5rem;text-align:center;font-size:13px;color:var(--muted);margin-top:2rem}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--navy)}
+
+/* ── Tooltip ── */
+.tip-dot{display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;border-radius:50%;background:var(--blue-light);color:var(--blue);font-size:10px;font-weight:800;cursor:help;margin-left:4px;vertical-align:middle;flex-shrink:0}
+
+/* ── Progress bar ── */
+.progress-wrap{margin-top:.5rem}
+.progress-label{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:.3rem}
+.progress-track{height:8px;background:var(--border);border-radius:10px;overflow:hidden}
+.progress-fill{height:100%;border-radius:10px;transition:width .4s ease}
+.progress-fill.green{background:linear-gradient(90deg,var(--green),#34d399)}
+.progress-fill.amber{background:linear-gradient(90deg,var(--amber),#fbbf24)}
+.progress-fill.red{background:linear-gradient(90deg,var(--red),#f87171)}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/" class="logo" aria-label="LayoffSurvival home">
+    <div class="logo-icon" aria-hidden="true">🛡️</div>
+    LayoffSurvival
+  </a>
+  <div style="display:flex;align-items:center;gap:8px">
+    <nav class="header-nav">
+      <a href="/severance-negotiation-script/" class="header-nav-link">Severance Script</a>
+      <a href="/blog/" class="header-nav-link">Blog</a>
+    </nav>
+    <span class="header-badge">Free · Private</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="hero">
+    <p class="breadcrumb"><a href="/">Home</a> › Layoff Budget Cutter</p>
+    <div class="hero-eyebrow"><span class="hero-line"></span>Free · Instant · Private<span class="hero-line"></span></div>
+    <h1>Layoff Budget Cutter —<br/><em>See What to Cut & How Many Days It Buys</em></h1>
+    <p>Toggle off each expense you're willing to cut. The tool instantly shows you how many days of financial runway each decision adds. Cut to the essentials and see exactly how long your money lasts.</p>
+    <div class="hero-badges">
+      <span class="hero-badge">✓ Instant calculation</span>
+      <span class="hero-badge">✓ Days gained per cut</span>
+      <span class="hero-badge">✓ Priority order</span>
+      <span class="hero-badge">✓ Saves automatically</span>
+      <span class="hero-badge">✓ 100% Private</span>
+    </div>
+  </div>
+
+  <!-- Ad top -->
+  <div class="ad-slot" role="complementary" aria-label="Advertisement">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4073124583870713" data-ad-slot="7607989280" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Runway setup -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">💰 Your Financial Starting Point</div>
+      <div style="font-size:12px;color:var(--muted)">Saves in your browser</div>
+    </div>
+    <div class="card-body">
+      <div class="savings-row">
+        <div>
+          <label class="field-label" for="savings">Total savings & cash ($)</label>
+          <input type="number" id="savings" value="25000" min="0" step="500" placeholder="25000"/>
+        </div>
+        <div>
+          <label class="field-label" for="unemployment">Unemployment benefit ($/month)</label>
+          <input type="number" id="unemployment" value="1800" min="0" step="50" placeholder="1800"/>
+        </div>
+      </div>
+      <div style="font-size:12px;color:var(--muted);line-height:1.6">Not sure of your unemployment amount? <a href="/" style="color:var(--blue);font-weight:600">Use the main calculator →</a> &nbsp;·&nbsp; Savings + monthly unemployment income together determine how long each dollar of cuts extends your runway.</div>
+    </div>
+  </div>
+
+  <!-- Live runway summary bar -->
+  <div class="runway-bar" id="runway-bar">
+    <div class="rw-stat">
+      <div class="rw-label">Current spend</div>
+      <div class="rw-value neutral" id="rw-spend">$—</div>
+      <div class="rw-sub">per month (active)</div>
+    </div>
+    <div class="rw-stat">
+      <div class="rw-label">Monthly savings</div>
+      <div class="rw-value positive" id="rw-saved">$0</div>
+      <div class="rw-sub">from cuts so far</div>
+    </div>
+    <div class="rw-stat">
+      <div class="rw-label">Runway</div>
+      <div class="rw-value" id="rw-runway">— mo</div>
+      <div class="rw-sub" id="rw-runway-sub">enter savings above</div>
+    </div>
+    <div class="rw-stat">
+      <div class="rw-label">Days gained</div>
+      <div class="rw-value positive" id="rw-days">+0 days</div>
+      <div class="rw-sub">from your cuts</div>
+    </div>
+  </div>
+
+  <div class="tool-layout">
+
+    <!-- LEFT: Expense categories -->
+    <div>
+
+      <!-- Cut summary (appears once cuts are made) -->
+      <div class="cut-summary" id="cut-summary">
+        <div style="font-family:var(--display);font-size:17px;font-weight:800">🎯 Your cuts so far</div>
+        <div class="cut-summary-grid">
+          <div>
+            <div class="cs-stat-label">Monthly savings</div>
+            <div class="cs-stat-value" id="cs-monthly">$0</div>
+          </div>
+          <div>
+            <div class="cs-stat-label">Days added</div>
+            <div class="cs-stat-value" id="cs-days">0 days</div>
+          </div>
+          <div>
+            <div class="cs-stat-label">Items cut</div>
+            <div class="cs-stat-value" id="cs-items">0</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CATEGORY: Subscriptions -->
+      <div class="card cat-section">
+        <div class="card-header">
+          <div class="card-title">📺 Subscriptions & Streaming</div>
+          <div class="cat-total" id="cat-total-subs">$0/mo active</div>
+        </div>
+        <div class="card-body" id="cat-subs"></div>
+      </div>
+
+      <!-- CATEGORY: Food -->
+      <div class="card cat-section">
+        <div class="card-header">
+          <div class="card-title">🍽️ Food & Dining</div>
+          <div class="cat-total" id="cat-total-food">$0/mo active</div>
+        </div>
+        <div class="card-body" id="cat-food"></div>
+      </div>
+
+      <!-- CATEGORY: Housing -->
+      <div class="card cat-section">
+        <div class="card-header">
+          <div class="card-title">🏠 Housing & Utilities</div>
+          <div class="cat-total" id="cat-total-housing">$0/mo active</div>
+        </div>
+        <div class="card-body" id="cat-housing"></div>
+      </div>
+
+      <!-- CATEGORY: Transport -->
+      <div class="card cat-section">
+        <div class="card-header">
+          <div class="card-title">🚗 Transportation</div>
+          <div class="cat-total" id="cat-total-transport">$0/mo active</div>
+        </div>
+        <div class="card-body" id="cat-transport"></div>
+      </div>
+
+      <!-- CATEGORY: Health -->
+      <div class="card cat-section">
+        <div class="card-header">
+          <div class="card-title">🏥 Health & Insurance</div>
+          <div class="cat-total" id="cat-total-health">$0/mo active</div>
+        </div>
+        <div class="card-body" id="cat-health"></div>
+      </div>
+
+      <!-- CATEGORY: Debt -->
+      <div class="card cat-section">
+        <div class="card-header">
+          <div class="card-title">💳 Debt & Savings</div>
+          <div class="cat-total" id="cat-total-debt">$0/mo active</div>
+        </div>
+        <div class="card-body" id="cat-debt"></div>
+      </div>
+
+      <!-- CATEGORY: Personal -->
+      <div class="card cat-section">
+        <div class="card-header">
+          <div class="card-title">🛍️ Personal & Lifestyle</div>
+          <div class="cat-total" id="cat-total-personal">$0/mo active</div>
+        </div>
+        <div class="card-body" id="cat-personal"></div>
+      </div>
+
+      <!-- Action plan -->
+      <div class="card" id="action-plan-card" style="display:none">
+        <div class="card-header">
+          <div class="card-title">✅ Your Cut Action Plan</div>
+          <div style="font-size:12px;color:var(--green-dark);font-weight:600">Prioritized by impact</div>
+        </div>
+        <div class="card-body">
+          <ul class="action-list" id="action-list"></ul>
+        </div>
+      </div>
+
+      <!-- Share -->
+      <div class="card">
+        <div class="card-body">
+          <div style="font-size:15px;font-weight:700;color:var(--navy);margin-bottom:.35rem">📤 Share with someone going through a layoff</div>
+          <div style="font-size:13px;color:var(--slate);margin-bottom:.75rem">This tool is free and private. Share it on Reddit to help others who need it right now.</div>
+          <div class="share-row">
+            <button class="share-btn sh-reddit" id="sh-reddit">🔴 Share on r/layoffs</button>
+            <button class="share-btn sh-copy" id="sh-copy">⎘ Copy Link</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom ad -->
+      <div class="ad-slot" aria-label="Advertisement">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4073124583870713" data-ad-slot="7607989280" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+    </div>
+
+    <!-- RIGHT: Sidebar -->
+    <div>
+
+      <div class="sidebar-card" style="background:linear-gradient(135deg,#f0fdf4,#dcfce7);border-color:#bbf7d0">
+        <div class="sidebar-label">Cut Priority Guide</div>
+        <div class="priority-card easy">
+          <div class="priority-label">🟢 Cut these first (painless)</div>
+          <div class="priority-title">Subscriptions & streaming</div>
+          <div class="priority-text">Netflix, Spotify, gym, apps. You won't miss them in week two. Cancel, don't pause — paused bills still hit cards.</div>
+        </div>
+        <div class="priority-card medium">
+          <div class="priority-label">🟡 Cut these next (uncomfortable)</div>
+          <div class="priority-title">Dining, delivery, shopping</div>
+          <div class="priority-text">DoorDash and restaurant meals are the fastest way to burn cash. Cook at home. Not forever — just for now.</div>
+        </div>
+        <div class="priority-card hard" style="margin-bottom:0">
+          <div class="priority-label">🔴 Last resort cuts only</div>
+          <div class="priority-title">Housing & health insurance</div>
+          <div class="priority-text">Talk to your landlord before skipping rent. Never cancel health coverage — switch to ACA if you can't afford COBRA.</div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-label">The math</div>
+        <div class="stat-big" id="sb-costperday">—</div>
+        <div class="sidebar-title">your cost per day right now</div>
+        <div class="sidebar-text">Every $100/month you cut saves you <strong id="sb-daysfrom100">—</strong> extra days. Small cuts compound.</div>
+        <div class="progress-wrap" id="sb-progress-wrap" style="display:none">
+          <div class="progress-label">
+            <span>Current spend vs. baseline</span>
+            <span id="sb-pct">—</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill green" id="sb-progress-fill" style="width:0%"></div></div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-label">Don't forget</div>
+        <div class="sidebar-title">Call your credit card companies</div>
+        <div class="sidebar-text">Most major cards have hardship programs — temporary 0% APR or reduced minimums for 3–6 months. You have to call and ask. This doesn't hurt your credit score.</div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-label">Related tools</div>
+        <div class="sidebar-title" style="margin-bottom:.5rem">Next steps</div>
+        <a href="/" style="display:flex;align-items:center;gap:8px;text-decoration:none;padding:.5rem 0;border-bottom:1px solid var(--border)">
+          <span style="font-size:18px">🧮</span>
+          <div><div style="font-size:13px;font-weight:700;color:var(--navy)">Runway Calculator</div><div style="font-size:11px;color:var(--muted)">Full financial picture</div></div>
+        </a>
+        <a href="/severance-negotiation-script/" style="display:flex;align-items:center;gap:8px;text-decoration:none;padding:.5rem 0">
+          <span style="font-size:18px">✍️</span>
+          <div><div style="font-size:13px;font-weight:700;color:var(--navy)">Severance Script</div><div style="font-size:11px;color:var(--muted)">Get more before you sign</div></div>
+        </a>
+      </div>
+
+      <!-- Sidebar ad -->
+      <div class="ad-slot" style="margin:0">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4073124583870713" data-ad-slot="7607989280" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SEO content -->
+  <div class="content-card">
+    <h2>What should I cut first after a layoff?</h2>
+    <p>The fastest path to extending your runway is cutting expenses in order of pain — start with the things that feel the least significant, because you can do those today without any lifestyle adjustment. Here's the order that makes mathematical sense:</p>
+    <ul>
+      <li><strong>Streaming and subscriptions first.</strong> Netflix, Hulu, Disney+, Spotify, gym memberships, software tools, news subscriptions. These feel small individually but $15 here and $45 there adds up quickly. Cancel all of them. You can resubscribe once you have income again.</li>
+      <li><strong>Dining and delivery second.</strong> Restaurant meals and food delivery (DoorDash, Uber Eats) are typically the second-largest discretionary spend for working professionals. A household spending $600/month on dining can get to $120 by cooking at home — that's nearly $500 in savings and potentially weeks of extended runway.</li>
+      <li><strong>Transportation third.</strong> Can you pause insurance on a second car? Drop to minimum coverage? Pause a car payment through your lender's hardship program? Many lenders offer 1–3 month payment deferrals on request.</li>
+      <li><strong>Never cut health insurance without a plan.</strong> COBRA is expensive but not your only option. If you lost employer coverage, you qualify for a Special Enrollment Period on ACA marketplace plans — often significantly cheaper than COBRA, especially with income-based subsidies.</li>
+    </ul>
+
+    <h2>How much should I reduce spending after a job loss?</h2>
+    <p>The target most financial planners recommend: cut to <strong>50–60% of your pre-layoff spending</strong> as quickly as possible. This feels dramatic but it's a temporary state, not a permanent lifestyle change. The psychological benefit of knowing your runway just doubled is worth the short-term discomfort.</p>
+    <p>The single biggest lever for most people is housing. If you're renting, call your landlord before you miss a payment — many will work out a temporary reduction rather than go through an eviction process. If you own, call your mortgage servicer about forbearance options immediately.</p>
+
+    <h2>What bills can I pause or defer after a layoff?</h2>
+    <p>More than most people realize. Credit card companies have hardship programs — call the number on the back of your card and say "I've recently been laid off and I'd like to discuss hardship options." Most major issuers will offer temporary 0% APR or reduced minimums for 3–6 months. Auto lenders often offer 1–3 month payment deferrals. Student loan servicers have income-driven repayment plans and hardship deferment. Utility companies in most states are required to offer payment plans. None of these are advertised prominently — you have to ask.</p>
+  </div>
+
+  <div class="faq-card">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <div class="faq-q">Should I withdraw from my 401k after a layoff?<div class="faq-icon">+</div></div>
+      <div class="faq-a">Almost never — this is a last resort. Early withdrawal (before 59½) triggers income tax plus a 10% penalty. On a $20,000 withdrawal, you might net only $13,000–$14,000 after taxes and penalties. Exhaust every other option first: cut expenses, negotiate severance, file for unemployment, use emergency savings, call lenders about hardship programs. A 401k loan is slightly better than a withdrawal but still risky if you can't repay it.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How do I handle subscriptions I forgot about?<div class="faq-icon">+</div></div>
+      <div class="faq-a">Go through your last 3 months of bank and credit card statements line by line. Look for recurring charges — anything repeating monthly or annually. Most people find 5–10 subscriptions they've forgotten about. Apps like Rocket Money or your bank's own subscription tracker can help surface these automatically.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Should I cancel my health insurance to save money?<div class="faq-icon">+</div></div>
+      <div class="faq-a">No — never cancel without replacing it first. One ER visit or unexpected illness without coverage can cost more than a year of premiums. If COBRA is too expensive, losing job-based coverage qualifies you for a Special Enrollment Period on healthcare.gov. Depending on your income and state, ACA plans can be significantly cheaper than COBRA, sometimes free with subsidies.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What's the fastest way to reduce housing costs?<div class="faq-icon">+</div></div>
+      <div class="faq-a">If renting: talk to your landlord immediately — before you miss a payment. Many landlords would rather negotiate a temporary reduction than deal with vacancy and re-renting. If you have a spare room, short-term rental income can substantially offset costs. If owning: contact your mortgage servicer about forbearance — most servicers offer 3–12 months of payment deferrals for documented hardship, with payments added to the end of your loan term.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How do I handle credit card debt during a job loss?<div class="faq-icon">+</div></div>
+      <div class="faq-a">Call each card issuer and ask specifically about their hardship program. Use the words "financial hardship" — this triggers a different conversation than a normal customer service call. Most major issuers (Chase, Citi, Amex, Capital One) have programs that can temporarily lower your APR to 0–6% and reduce minimums. This is not the same as missing payments, which damages your credit. The hardship program is a proactive arrangement that keeps you current.</div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 LayoffSurvival &nbsp;·&nbsp; For informational purposes only — not financial advice &nbsp;·&nbsp;
+  <a href="/privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="/terms.html">Terms</a> &nbsp;·&nbsp;
+  <a href="/about.html">About</a> &nbsp;·&nbsp; <a href="/blog/">Blog</a></p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+'use strict';
+
+// ── Expense data ──
+const CATEGORIES = [
+  {
+    id:'subs', label:'Subscriptions & Streaming',
+    items:[
+      {id:'netflix',   name:'Netflix',           amt:18,  essential:false, tip:'Cancel, not pause. Re-subscribe when employed.'},
+      {id:'spotify',   name:'Spotify / Music',   amt:11,  essential:false, tip:'YouTube free tier or local library music apps work.'},
+      {id:'hulu',      name:'Hulu / Disney+',    amt:14,  essential:false, tip:'Bundle services are still non-essentials.'},
+      {id:'gym',       name:'Gym membership',    amt:45,  essential:false, tip:'Cancel and use free outdoor workouts or YouTube fitness.'},
+      {id:'amazon',    name:'Amazon Prime',      amt:16,  essential:false, tip:'Free shipping alternatives exist. Pause this.'},
+      {id:'software',  name:'Software / apps',   amt:30,  essential:false, tip:'Audit every recurring charge in your bank app.'},
+      {id:'news',      name:'News subscriptions',amt:15,  essential:false, tip:'Most local libraries give free digital access.'},
+    ]
+  },
+  {
+    id:'food', label:'Food & Dining',
+    items:[
+      {id:'groceries',  name:'Groceries',         amt:500, essential:true,  tip:'Essential — but switch to store brands. Target $250–$350.'},
+      {id:'dining',     name:'Restaurants / dining out', amt:300, essential:false, tip:'Cook at home. Biggest discretionary cut available.'},
+      {id:'delivery',   name:'Food delivery (DoorDash etc.)', amt:200, essential:false, tip:'Delivery fees + tips = 30-40% markup. Stop completely.'},
+      {id:'coffee',     name:'Coffee shops',      amt:80,  essential:false, tip:'Make at home. $80/month = 8+ days of runway for many.'},
+      {id:'lunch',      name:'Work lunches (eating out)', amt:150, essential:false, tip:'Now that you\'re home, this cost is mostly eliminated.'},
+    ]
+  },
+  {
+    id:'housing', label:'Housing & Utilities',
+    items:[
+      {id:'rent',       name:'Rent / mortgage',   amt:1800,essential:true,  tip:'Call landlord/servicer before missing — hardship options exist.'},
+      {id:'electric',   name:'Electric / gas',    amt:130, essential:true,  tip:'Essential. Adjust thermostat, call about payment plans.'},
+      {id:'internet',   name:'Internet',          amt:70,  essential:true,  tip:'Needed for job search. Call and ask for a lower rate.'},
+      {id:'phone',      name:'Phone bill',        amt:85,  essential:true,  tip:'Call carrier. Prepaid plans (Mint, Visible) run $15–$35/mo.'},
+      {id:'streaming2', name:'Cable TV',          amt:80,  essential:false, tip:'Cut immediately. Internet covers everything cable does.'},
+      {id:'storage',    name:'Storage unit',      amt:120, essential:false, tip:'Sell the contents or move them home.'},
+    ]
+  },
+  {
+    id:'transport', label:'Transportation',
+    items:[
+      {id:'car1',       name:'Car payment (primary)', amt:450, essential:true,  tip:'Call lender about 1–3 month hardship deferral.'},
+      {id:'car2',       name:'Car payment (second)', amt:350, essential:false, tip:'Consider selling or pausing insurance on second car.'},
+      {id:'carins',     name:'Car insurance',     amt:150, essential:true,  tip:'Shop quotes. Remove collision on older cars.'},
+      {id:'gas',        name:'Gas / fuel',        amt:150, essential:true,  tip:'Less commuting = less gas. Combine errands.'},
+      {id:'rideshare',  name:'Rideshare (Uber/Lyft)',amt:60,essential:false, tip:'Drive yourself or use transit during job search.'},
+      {id:'parking',    name:'Parking / tolls',   amt:80,  essential:false, tip:'If commute is gone, this is gone too.'},
+    ]
+  },
+  {
+    id:'health', label:'Health & Insurance',
+    items:[
+      {id:'healthins',  name:'Health insurance',  amt:450, essential:true,  tip:'Never cancel. Switch to ACA if COBRA is too expensive.'},
+      {id:'dental',     name:'Dental / vision ins',amt:50, essential:false, tip:'Postpone non-urgent dental work. Community clinics exist.'},
+      {id:'lifeins',    name:'Life insurance',    amt:40,  essential:false, tip:'Talk to your insurer — hardship options may be available.'},
+      {id:'therapist',  name:'Therapy / counseling',amt:120,essential:false,tip:'Sliding scale therapists charge $30–$60. Open Path Collective.'},
+      {id:'rx',         name:'Prescriptions',     amt:80,  essential:true,  tip:'Ask for generics. GoodRx often cheaper than insurance.'},
+    ]
+  },
+  {
+    id:'debt', label:'Debt & Savings',
+    items:[
+      {id:'creditmin',  name:'Credit card minimums',amt:200,essential:true, tip:'Call issuers for hardship programs — can cut to near zero.'},
+      {id:'student',    name:'Student loans',     amt:350, essential:false, tip:'Apply for income-driven repayment or hardship deferment.'},
+      {id:'savings401', name:'401k contributions',amt:400, essential:false, tip:'Stop contributions temporarily — preserve cash now.'},
+      {id:'savingsacc', name:'Monthly savings transfers',amt:500,essential:false,tip:'Pause automated savings. You\'re in drawdown mode.'},
+    ]
+  },
+  {
+    id:'personal', label:'Personal & Lifestyle',
+    items:[
+      {id:'clothing',   name:'Clothing / shopping',amt:200,essential:false, tip:'Buy nothing new. Exception: interview clothes if needed.'},
+      {id:'beauty',     name:'Salon / beauty',    amt:80,  essential:false, tip:'Cut or stretch appointments. Prioritize confidence for interviews.'},
+      {id:'hobbies',    name:'Hobbies / entertainment',amt:100,essential:false,tip:'Free alternatives everywhere. Libraries, parks, YouTube.'},
+      {id:'gifts',      name:'Gifts & social spending',amt:80,essential:false,tip:'Honest conversations with family and friends go a long way.'},
+      {id:'pets',       name:'Pet care / food',   amt:120, essential:true,  tip:'Essential. Shop generic food. Delay non-urgent vet visits.'},
+      {id:'childcare',  name:'Childcare',         amt:800, essential:true,  tip:'Essential. Check for state subsidy programs.'},
+    ]
+  }
+];
+
+// Build state object
+const state = {savings:25000, unemployment:1800, expenses:{}};
+CATEGORIES.forEach(cat => cat.items.forEach(item => {
+  state.expenses[item.id] = {on:true, amt:item.amt};
+}));
+
+// Load from localStorage
+function loadState(){
+  try{
+    const saved = localStorage.getItem('lbc_state');
+    if(saved){
+      const parsed = JSON.parse(saved);
+      if(parsed.savings !== undefined) state.savings = parsed.savings;
+      if(parsed.unemployment !== undefined) state.unemployment = parsed.unemployment;
+      Object.keys(parsed.expenses||{}).forEach(id => {
+        if(state.expenses[id]){
+          state.expenses[id].on = parsed.expenses[id].on;
+          state.expenses[id].amt = parsed.expenses[id].amt;
+        }
+      });
+    }
+  } catch(e){}
+}
+
+function saveState(){
+  try{localStorage.setItem('lbc_state', JSON.stringify(state))}catch(e){}
+}
+
+// ── Render all categories ──
+function renderCategories(){
+  CATEGORIES.forEach(cat => {
+    const el = document.getElementById('cat-'+cat.id);
+    if(!el) return;
+    el.innerHTML = cat.items.map(item => {
+      const s = state.expenses[item.id];
+      const days = calcDaysForItem(item.id);
+      const daysLabel = s.on ? '' : (days > 0 ? `+${days}d` : '');
+      return `
+      <div class="expense-row" id="row-${item.id}">
+        <button class="exp-toggle ${s.on?'on':'off'}" data-id="${item.id}" aria-label="Toggle ${item.name}" title="${item.tip}"></button>
+        <span class="exp-name${s.on?'':' off-state'}" title="${item.tip}">${item.name}${item.essential?' <span style="font-size:10px;color:var(--muted);font-weight:600">(essential)</span>':''}</span>
+        <input type="number" class="exp-amount" data-id="${item.id}" value="${s.amt}" min="0" step="5" aria-label="${item.name} amount"/>
+        <span class="exp-days ${s.on?'zero':'gain'}" id="days-${item.id}">${daysLabel||'—'}</span>
+      </div>`;
+    }).join('');
+  });
+  bindRowEvents();
+}
+
+function bindRowEvents(){
+  document.querySelectorAll('.exp-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.id;
+      state.expenses[id].on = !state.expenses[id].on;
+      saveState();
+      renderCategories();
+      recalc();
+    });
+  });
+  document.querySelectorAll('.exp-amount').forEach(inp => {
+    inp.addEventListener('input', () => {
+      const id = inp.dataset.id;
+      state.expenses[id].amt = parseFloat(inp.value)||0;
+      saveState();
+      recalc();
+      updateDaysLabel(id);
+      updateCatTotals();
+    });
+  });
+}
+
+function updateDaysLabel(id){
+  const el = document.getElementById('days-'+id);
+  if(!el) return;
+  const s = state.expenses[id];
+  if(s.on){ el.textContent='—'; el.className='exp-days zero'; }
+  else {
+    const d = calcDaysForItem(id);
+    el.textContent = d>0?`+${d}d`:'—';
+    el.className = 'exp-days '+(d>0?'gain':'zero');
+  }
+}
+
+function calcDaysForItem(id){
+  const s = state.expenses[id];
+  if(s.on) return 0;
+  const monthly = s.amt;
+  const totalSpend = getTotalSpend();
+  const netMonthly = totalSpend + monthly; // spend if this item were on
+  if(netMonthly <= 0) return 0;
+  // days = (savings / (netMonthly - unemployment)) - (savings / (totalSpend - unemployment))
+  // Simplified: extra days = monthly / daily_burn
+  const totalBurn = Math.max(totalSpend - state.unemployment, 1);
+  const daily = totalBurn / 30.4;
+  return Math.round(monthly / daily);
+}
+
+function getTotalSpend(){
+  let total = 0;
+  Object.values(state.expenses).forEach(e => { if(e.on) total += e.amt; });
+  return total;
+}
+
+function getOriginalSpend(){
+  let total = 0;
+  Object.values(state.expenses).forEach(e => { total += e.amt; });
+  return total;
+}
+
+function getCutAmount(){
+  let total = 0;
+  Object.values(state.expenses).forEach(e => { if(!e.on) total += e.amt; });
+  return total;
+}
+
+function getCutItems(){
+  let count = 0;
+  Object.values(state.expenses).forEach(e => { if(!e.on) count++; });
+  return count;
+}
+
+function calcRunway(monthlySpend){
+  const netBurn = monthlySpend - state.unemployment;
+  if(netBurn <= 0) return Infinity;
+  return state.savings / netBurn;
+}
+
+function fmt(n){ return '$'+Math.round(n).toLocaleString(); }
+function fmtMo(n){ return n===Infinity?'∞':(n>=12?(n/12).toFixed(1)+' yrs':n.toFixed(1)+' mo'); }
+
+function recalc(){
+  const totalSpend = getTotalSpend();
+  const origSpend = getOriginalSpend();
+  const cutAmt = getCutAmount();
+  const cutItems = getCutItems();
+
+  const origRunway = calcRunway(origSpend);
+  const newRunway = calcRunway(totalSpend);
+  const daysGained = origRunway === Infinity ? 0 :
+    newRunway === Infinity ? 9999 :
+    Math.round((newRunway - origRunway) * 30.4);
+
+  const netBurn = Math.max(totalSpend - state.unemployment, 1);
+  const dailyCost = netBurn / 30.4;
+  const daysPer100 = Math.round(100 / dailyCost);
+
+  // Runway bar
+  document.getElementById('rw-spend').textContent = fmt(totalSpend);
+  document.getElementById('rw-saved').textContent = fmt(cutAmt);
+
+  const rwEl = document.getElementById('rw-runway');
+  rwEl.textContent = state.savings>0 ? fmtMo(newRunway) : '—';
+  rwEl.className = 'rw-value '+(newRunway>=6?'positive':newRunway>=3?'neutral':'critical');
+  document.getElementById('rw-runway-sub').textContent = state.savings>0?'at current spend':'enter savings above';
+
+  const daysEl = document.getElementById('rw-days');
+  daysEl.textContent = daysGained===9999?'∞ days':`+${daysGained} days`;
+  daysEl.className = 'rw-value '+(daysGained>0?'positive':'neutral');
+
+  // Sidebar math
+  document.getElementById('sb-costperday').textContent = fmt(dailyCost)+'/day';
+  document.getElementById('sb-daysfrom100').textContent = daysPer100+' extra days';
+
+  // Progress bar
+  const pct = origSpend>0 ? Math.round((totalSpend/origSpend)*100) : 100;
+  const wrap = document.getElementById('sb-progress-wrap');
+  const fill = document.getElementById('sb-progress-fill');
+  const pctEl = document.getElementById('sb-pct');
+  wrap.style.display = 'block';
+  fill.style.width = pct+'%';
+  fill.className = 'progress-fill '+(pct<60?'green':pct<80?'amber':'red');
+  pctEl.textContent = pct+'% of original';
+
+  // Cut summary
+  const sumEl = document.getElementById('cut-summary');
+  if(cutItems>0){
+    sumEl.classList.add('visible');
+    document.getElementById('cs-monthly').textContent = fmt(cutAmt);
+    document.getElementById('cs-days').textContent = daysGained===9999?'∞':daysGained+' days';
+    document.getElementById('cs-items').textContent = cutItems;
+  } else {
+    sumEl.classList.remove('visible');
+  }
+
+  // Action plan
+  buildActionPlan(cutItems);
+  updateCatTotals();
+  CATEGORIES.forEach(cat => cat.items.forEach(item => updateDaysLabel(item.id)));
+}
+
+function updateCatTotals(){
+  CATEGORIES.forEach(cat => {
+    let total = 0;
+    cat.items.forEach(item => { if(state.expenses[item.id].on) total += state.expenses[item.id].amt; });
+    const el = document.getElementById('cat-total-'+cat.id);
+    if(el) el.textContent = fmt(total)+'/mo active';
+  });
+}
+
+function buildActionPlan(cutItems){
+  const card = document.getElementById('action-plan-card');
+  if(cutItems === 0){ card.style.display='none'; return; }
+  card.style.display='block';
+
+  // Collect cut items sorted by savings desc
+  const cuts = [];
+  CATEGORIES.forEach(cat => cat.items.forEach(item => {
+    const s = state.expenses[item.id];
+    if(!s.on && s.amt>0){
+      cuts.push({name:item.name, amt:s.amt, tip:item.tip, days:calcDaysForItem(item.id)});
+    }
+  }));
+  cuts.sort((a,b)=>b.amt-a.amt);
+
+  const list = document.getElementById('action-list');
+  list.innerHTML = cuts.slice(0,8).map((c,i)=>`
+    <li class="action-item">
+      <div class="action-num">${i+1}</div>
+      <div class="action-body">
+        <div class="action-title">${c.name}</div>
+        <div class="action-text">${c.tip}</div>
+        <span class="action-savings">${fmt(c.amt)}/mo · +${c.days} days</span>
+      </div>
+    </li>
+  `).join('');
+}
+
+function showToast(msg,ms=2600){
+  const t=document.getElementById('toast');
+  t.textContent=msg; t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),ms);
+}
+
+// Share
+document.getElementById('sh-reddit').addEventListener('click',()=>{
+  const t=encodeURIComponent('Free tool: Layoff Budget Cutter — see exactly what to cut and how many days each cut adds to your runway (layoffsurvival.com)');
+  const u=encodeURIComponent('https://layoffsurvival.com/layoff-budget-cutter/');
+  window.open('https://reddit.com/submit?url='+u+'&title='+t,'_blank');
+});
+document.getElementById('sh-copy').addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText('https://layoffsurvival.com/layoff-budget-cutter/');showToast('✓ Link copied!');}
+  catch(e){showToast('Copy failed');}
+});
+
+// FAQ
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const open=q.classList.contains('open');
+    document.querySelectorAll('.faq-q').forEach(x=>{x.classList.remove('open');x.nextElementSibling.classList.remove('open');});
+    if(!open){q.classList.add('open');q.nextElementSibling.classList.add('open');}
+  });
+});
+
+// Savings/unemployment inputs
+document.getElementById('savings').addEventListener('input',e=>{state.savings=parseFloat(e.target.value)||0;saveState();recalc();});
+document.getElementById('unemployment').addEventListener('input',e=>{state.unemployment=parseFloat(e.target.value)||0;saveState();recalc();});
+
+// Init
+loadState();
+document.getElementById('savings').value = state.savings;
+document.getElementById('unemployment').value = state.unemployment;
+renderCategories();
+recalc();
+</script>
+</body>
+</html>
