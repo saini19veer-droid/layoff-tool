@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>How Long Will Your Money Last After a Layoff? (Runway Formula) – LayoffSurvival</title>
+<meta name="description" content="The exact formula to calculate your financial runway after a layoff — including severance, unemployment, and COBRA — plus a worked example and ways to extend it."/>
+<meta name="keywords" content="how long will my money last after layoff, financial runway calculator, layoff budget, severance runway"/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://layoffsurvival.com/blog/how-long-will-money-last-after-layoff.html"/>
+<meta property="og:title" content="How Long Will Your Money Last After a Layoff?"/>
+<meta property="og:description" content="The exact formula to calculate your real runway — including unemployment and COBRA."/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://layoffsurvival.com/blog/how-long-will-money-last-after-layoff.html"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"How Long Will Your Money Last After a Layoff?","description":"The exact formula to calculate your financial runway after a layoff — including severance, unemployment, and COBRA — plus a worked example and ways to extend it.","url":"https://layoffsurvival.com/blog/how-long-will-money-last-after-layoff.html","datePublished":"2026-07-27","dateModified":"2026-07-27","author":{"@type":"Organization","name":"LayoffSurvival"},"publisher":{"@type":"Organization","name":"LayoffSurvival","url":"https://layoffsurvival.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is a financial runway after a layoff?","acceptedAnswer":{"@type":"Answer","text":"Your runway is the number of months you can cover your expenses using liquid savings, severance pay, and unemployment benefits before your money runs out, assuming no new income. It's calculated as total available funds divided by your real monthly expenses."}},
+{"@type":"Question","name":"Should I count unemployment benefits in my runway?","acceptedAnswer":{"@type":"Answer","text":"Yes, but only after checking your state's rules on how severance affects timing. In many states, unemployment doesn't start until severance payments end or are exhausted. Once it does start, include the expected weekly amount and duration for your state in your runway calculation."}},
+{"@type":"Question","name":"Is severance pay taxed the same as a regular paycheck?","acceptedAnswer":{"@type":"Answer","text":"Severance is treated as taxable wages and is typically subject to federal income tax, Social Security, and Medicare, often withheld at a flat supplemental rate (22% federally, as of recent IRS guidance) rather than your normal payroll rate. Always calculate your runway using the after-tax, take-home amount — not the gross severance figure."}},
+{"@type":"Question","name":"What's the fastest way to extend my runway?","acceptedAnswer":{"@type":"Answer","text":"The two highest-leverage moves are usually reducing your largest fixed costs (housing, car payments, subscriptions) and negotiating for more severance before you sign your agreement, since even a few additional weeks of severance can add a full month or more of runway."}},
+{"@type":"Question","name":"Should I include my retirement savings in my runway calculation?","acceptedAnswer":{"@type":"Answer","text":"Generally no. 401(k) and IRA withdrawals before age 59½ usually trigger a 10% early withdrawal penalty plus ordinary income tax, which erodes their value significantly. Treat retirement accounts as a last resort, separate from your primary runway calculation, not as part of your available funds."}}
+]}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073124583870713" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--blue:#1d4ed8;--blue-light:#dbeafe;--blue-dark:#1e3a8a;--blue-mid:#3b82f6;--navy:#0f172a;--slate:#475569;--muted:#94a3b8;--border:#e2e8f0;--bg:#f0f4f8;--white:#fff;--green:#10b981;--green-light:#d1fae5;--red:#ef4444;--red-light:#fee2e2;--amber:#f59e0b;--amber-light:#fef3c7;--shadow:0 4px 16px rgba(0,0,0,.08);--r-sm:8px;--r-lg:16px;--r-xl:24px;--font:'Inter',system-ui,sans-serif;--display:'Space Grotesk',system-ui,sans-serif;}
+body{font-family:var(--font);background:var(--bg);color:var(--navy);line-height:1.7;font-size:16px;min-height:100vh}
+body::before{content:'';position:fixed;inset:0;background:linear-gradient(135deg,#f0f4f8 0%,#e8edf5 50%,#edf4ff 100%);z-index:-1}
+.site-header{background:rgba(255,255,255,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.8);padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:62px;position:sticky;top:0;z-index:300;box-shadow:0 2px 12px rgba(29,78,216,.08)}
+.logo{font-family:var(--display);font-weight:800;font-size:18px;color:var(--blue-dark);text-decoration:none;letter-spacing:-.5px;display:flex;align-items:center;gap:9px}
+.logo-icon{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,#1d4ed8,#1e3a8a);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.header-nav{display:flex;align-items:center;gap:4px}
+.header-nav-link{font-size:13px;font-weight:600;color:var(--slate);text-decoration:none;padding:5px 12px;border-radius:20px;transition:all .15s}
+.header-nav-link:hover{background:var(--blue-light);color:var(--blue-dark)}
+.wrap{max-width:860px;margin:0 auto;padding:0 1.25rem}
+.hero{padding:2.5rem 0 1.5rem}
+.breadcrumb{font-size:12px;color:var(--muted);margin-bottom:1rem}
+.breadcrumb a{color:var(--blue);text-decoration:none}
+.tag-badge{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--blue);background:var(--blue-light);padding:3px 11px;border-radius:20px;margin-bottom:.85rem}
+h1{font-family:var(--display);font-size:clamp(1.7rem,4.2vw,2.5rem);font-weight:800;line-height:1.15;letter-spacing:-.02em;margin-bottom:.75rem}
+.hero-sub{font-size:1.05rem;color:var(--slate);margin-bottom:.5rem;line-height:1.65}
+.meta-line{font-size:12px;color:var(--muted);margin-bottom:1.5rem;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.ad-wrap{margin:1.25rem 0}
+.toc-card{background:rgba(255,255,255,.85);border:1px solid var(--border);border-radius:var(--r-lg);padding:1.1rem 1.4rem;margin:1.25rem 0 1.5rem}
+.toc-card .toc-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:.6rem}
+.toc-card ol{padding-left:1.2rem}
+.toc-card li{font-size:.88rem;margin-bottom:.4rem}
+.toc-card a{color:var(--blue-dark);text-decoration:none;font-weight:600}
+.toc-card a:hover{text-decoration:underline}
+.formula-box{background:linear-gradient(135deg,#1e3a8a,#1d4ed8);border-radius:var(--r-xl);padding:1.5rem 1.75rem;margin:1.25rem 0;color:#fff;text-align:center}
+.formula-box .f-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;opacity:.75;margin-bottom:.6rem}
+.formula-box .f-text{font-family:var(--display);font-size:clamp(.95rem,2.6vw,1.3rem);font-weight:700;line-height:1.5}
+.card{background:rgba(255,255,255,.88);border:1px solid var(--border);border-radius:var(--r-xl);padding:1.75rem 2rem;margin:1.25rem 0;box-shadow:var(--shadow);scroll-margin-top:80px}
+.card h2{font-family:var(--display);font-size:1.25rem;font-weight:800;color:var(--navy);margin-bottom:.9rem}
+.card h3{font-family:var(--display);font-size:1.02rem;font-weight:700;color:var(--navy);margin:1.3rem 0 .55rem}
+.card p{color:var(--slate);margin-bottom:.9rem;line-height:1.78;font-size:.97rem}
+.card p:last-child{margin-bottom:0}
+.card ul,.card ol{padding-left:1.3rem;color:var(--slate);margin-bottom:.9rem}
+.card li{margin-bottom:.5rem;line-height:1.7;font-size:.97rem}
+.card li::marker{color:var(--blue)}
+.card strong{color:var(--navy)}
+.data-table{width:100%;border-collapse:collapse;font-size:.88rem;margin:.9rem 0}
+.data-table th{background:#f1f5f9;padding:9px 12px;text-align:left;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--slate);border-bottom:1px solid var(--border)}
+.data-table td{padding:9px 12px;border-top:1px solid var(--border);color:var(--slate)}
+.data-table tr.total td{font-weight:800;color:var(--navy);border-top:2px solid var(--navy)}
+.num-green{color:var(--green);font-weight:700}
+.num-red{color:var(--red);font-weight:700}
+.callout-warn{background:#fef3c7;border-left:3px solid var(--amber);border-radius:0 var(--r-lg) var(--r-lg) 0;padding:1rem 1.25rem;margin:1rem 0;font-size:.93rem;color:#78350f}
+.callout-warn strong{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.3rem;color:#92400e}
+.callout-info{background:var(--blue-light);border-left:3px solid var(--blue);border-radius:0 var(--r-lg) var(--r-lg) 0;padding:1rem 1.25rem;margin:1rem 0;font-size:.93rem;color:#1e3a8a}
+.callout-info strong{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.07em;margin-bottom:.3rem;color:var(--blue-dark)}
+.cta-box{background:linear-gradient(135deg,#1e3a8a,#1d4ed8);border-radius:var(--r-xl);padding:2rem 2.25rem;margin:1.75rem 0;text-align:center;color:#fff}
+.cta-box h2{font-family:var(--display);font-size:1.2rem;font-weight:800;margin-bottom:.6rem;color:#fff}
+.cta-box p{font-size:.93rem;opacity:.85;margin-bottom:1.25rem;max-width:480px;margin-left:auto;margin-right:auto}
+.btn-cta{display:inline-block;background:#fff;color:#1e3a8a;font-family:var(--display);font-size:14px;font-weight:800;padding:12px 28px;border-radius:10px;text-decoration:none}
+.faq-card h2{font-family:var(--display);font-size:1.25rem;font-weight:800;color:var(--navy);margin-bottom:.9rem}
+.faq-item{border-top:1px solid var(--border)}
+.faq-item:last-child{border-bottom:1px solid var(--border)}
+.faq-q{font-weight:600;font-size:.94rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:.9rem 0;user-select:none;color:var(--navy);transition:color .15s}
+.faq-q:hover{color:var(--blue)}
+.faq-icon{width:22px;height:22px;border-radius:50%;background:var(--blue-light);border:1.5px solid #93c5fd;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:13px;color:var(--blue);transition:all .2s}
+.faq-q.open .faq-icon{transform:rotate(45deg);background:#bfdbfe}
+.faq-a{font-size:.9rem;color:var(--slate);padding-bottom:.9rem;display:none;line-height:1.75}
+.faq-a.open{display:block}
+.related-links{display:flex;flex-wrap:wrap;gap:8px;margin:1rem 0}
+.related-link{font-size:12px;font-weight:600;color:var(--blue-dark);background:var(--blue-light);padding:5px 12px;border-radius:20px;text-decoration:none}
+.related-link:hover{background:var(--blue);color:#fff}
+.disclaimer{font-size:.8rem;color:var(--muted);margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--border)}
+footer{background:rgba(255,255,255,.8);border-top:1px solid var(--border);padding:1.5rem;text-align:center;font-size:13px;color:var(--muted);margin-top:2rem}
+footer a{color:var(--muted);text-decoration:none}
+@media(max-width:600px){.card{padding:1.4rem 1.5rem}.cta-box{padding:1.6rem 1.5rem}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a href="/" class="logo"><div class="logo-icon">🛡️</div>LayoffSurvival</a>
+  <nav class="header-nav">
+    <a href="/" class="header-nav-link">Calculator</a>
+    <a href="/severance-negotiation-script/" class="header-nav-link">Severance Script</a>
+    <a href="/layoff-budget-cutter/" class="header-nav-link">Budget Cutter</a>
+    <a href="/blog/" class="header-nav-link">Blog</a>
+  </nav>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <p class="breadcrumb"><a href="/">Home</a> › <a href="/blog/">Guides</a> › How Long Will Your Money Last</p>
+    <span class="tag-badge">Finance</span>
+    <h1>How Long Will Your Money Last After a Layoff?</h1>
+    <p class="hero-sub">Not "how much do I have" — how many <em>months</em> do I have. Here's the exact formula, a worked example, and where most people miscalculate.</p>
+    <p class="meta-line"><span>📅 Updated July 2026</span><span>·</span><span>⏱️ 6 min read</span></p>
+  </div>
+
+  <div class="ad-wrap">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4073124583870713" data-ad-slot="7607989280" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="toc-card">
+    <div class="toc-label">On this page</div>
+    <ol>
+      <li><a href="#formula">The runway formula</a></li>
+      <li><a href="#savings">Step 1: Count your liquid savings</a></li>
+      <li><a href="#severance">Step 2: Calculate severance after tax</a></li>
+      <li><a href="#unemployment">Step 3: Add expected unemployment</a></li>
+      <li><a href="#expenses">Step 4: Find your real monthly expenses</a></li>
+      <li><a href="#example">Worked example</a></li>
+      <li><a href="#extend">6 ways to extend your runway</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </div>
+
+  <div class="card" id="formula">
+    <h2>The runway formula</h2>
+    <p>Your financial runway is the number of months you can cover your bills before your available money runs out, assuming no new income arrives. It's a single number, and it's the most useful thing you can calculate in your first week after a layoff — more useful than a full budget, because it tells you how much time pressure you're actually under.</p>
+    <div class="formula-box">
+      <div class="f-label">The formula</div>
+      <div class="f-text">(Liquid Savings + After-Tax Severance + Total Expected Unemployment) ÷ Real Monthly Expenses = Runway in Months</div>
+    </div>
+    <p>Each of the four inputs has a common mistake attached to it. Let's go through them one at a time.</p>
+  </div>
+
+  <div class="card" id="savings">
+    <h2>Step 1: Count your liquid savings — only liquid savings</h2>
+    <p>Include checking and savings account balances, plus any money market or brokerage funds you'd genuinely be willing to sell within days if needed. Do not include:</p>
+    <ul>
+      <li><strong>Retirement accounts</strong> (401(k), IRA) — early withdrawal typically triggers a 10% penalty plus ordinary income tax, which can eat a third or more of what you withdraw.</li>
+      <li><strong>Home equity</strong> — not accessible on a timeline that helps you in month two.</li>
+      <li><strong>Money you've mentally earmarked for something else</strong> — an emergency fund only works as an emergency fund if you count it as available, but be honest about anything already committed (a wedding, a down payment) that you're not actually willing to touch.</li>
+    </ul>
+  </div>
+
+  <div class="card" id="severance">
+    <h2>Step 2: Calculate severance after tax, not before</h2>
+    <p>This is the single most common overestimate. Severance is taxable income — subject to federal income tax, Social Security, and Medicare — and employers frequently withhold it at a flat 22% federal supplemental rate rather than your normal paycheck withholding. State tax may apply on top of that.</p>
+    <p>A rough rule of thumb: take your gross severance and multiply by 0.72–0.78 to estimate take-home pay, depending on your state and tax bracket. If your severance is paid out over several paychecks rather than a lump sum, use the actual net amount from your first severance paycheck as your reference point.</p>
+    <div class="callout-warn"><strong>Common mistake</strong>Using the gross severance number in your runway calculation can overstate your runway by several weeks. Always use the number that actually lands in your bank account.</div>
+  </div>
+
+  <div class="card" id="unemployment">
+    <h2>Step 3: Add your total expected unemployment</h2>
+    <p>Multiply your state's estimated weekly benefit by the number of weeks you're eligible (most states offer 26 weeks, though this ranges from 12 to 30 depending on the state). Two details commonly get missed:</p>
+    <ul>
+      <li><strong>Severance can delay your start date.</strong> Some states won't begin paying unemployment until your severance period ends. Check your specific state's rule before assuming the two run concurrently.</li>
+      <li><strong>Unemployment is taxable income too.</strong> It's rarely withheld automatically unless you opt in — factor that into any separate tax-planning estimate, though for runway purposes you can generally use the gross weekly amount since withholding is optional.</li>
+    </ul>
+    <p>See exact weekly maximums and duration for every state in our <a href="/blog/unemployment-benefits-by-state.html">unemployment benefits by state guide</a>.</p>
+  </div>
+
+  <div class="card" id="expenses">
+    <h2>Step 4: Find your real monthly expenses — including the ones that just went up</h2>
+    <p>Pull your last two to three months of bank and credit card statements rather than estimating from memory; actual spending is almost always higher than remembered spending. Then account for costs that increase specifically because of the layoff:</p>
+    <ul>
+      <li><strong>Health insurance.</strong> If you were on an employer plan, your monthly cost is likely to rise significantly under COBRA or a marketplace plan. See our <a href="/blog/cobra-vs-aca-after-layoff.html">COBRA vs. ACA comparison</a> for real numbers.</li>
+      <li><strong>Any benefit that quietly disappears</strong> — commuter benefits, phone stipends, wellness reimbursements, or a company laptop you now need to replace.</li>
+    </ul>
+    <p>Separate fixed costs (rent, insurance, minimum debt payments) from variable ones (groceries, entertainment, discretionary spending) — this split matters for step 6 below.</p>
+  </div>
+
+  <div class="ad-wrap">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4073124583870713" data-ad-slot="7607989280" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="card" id="example">
+    <h2>Worked example</h2>
+    <p>Here's the formula applied to a hypothetical person with $9,000 in savings, 8 weeks of severance at a $2,200/week net rate, and eligibility for 26 weeks of unemployment at a net weekly benefit of $450 in their state.</p>
+    <table class="data-table">
+      <thead><tr><th>Input</th><th>Calculation</th><th>Amount</th></tr></thead>
+      <tbody>
+        <tr><td>Liquid savings</td><td>—</td><td>$9,000</td></tr>
+        <tr><td>Severance (after tax)</td><td>8 weeks × $2,200</td><td>$17,600</td></tr>
+        <tr><td>Unemployment (state max, after severance ends)</td><td>26 weeks × $450</td><td>$11,700</td></tr>
+        <tr class="total"><td>Total available funds</td><td></td><td>$38,300</td></tr>
+      </tbody>
+    </table>
+    <p>If real monthly expenses (including the new COBRA or marketplace premium) come to $5,900/month:</p>
+    <div class="formula-box">
+      <div class="f-label">Result</div>
+      <div class="f-text">$38,300 ÷ $5,900 = 6.5 months of runway</div>
+    </div>
+    <p>That's a materially different — and more actionable — number than "I have $9,000 in savings," which on its own would suggest less than two months. Severance and unemployment together are often the majority of a household's actual runway.</p>
+  </div>
+
+  <div class="cta-box">
+    <h2>Run Your Own Numbers in 60 Seconds</h2>
+    <p>Enter your severance, savings, state, and expenses. Get your exact month-by-month runway — free, private, no signup.</p>
+    <a href="/" class="btn-cta">Open Free Calculator →</a>
+  </div>
+
+  <div class="card" id="extend">
+    <h2>6 ways to extend your runway</h2>
+    <ol>
+      <li><strong>Negotiate your severance before signing.</strong> Even two or three additional weeks can add a half-month or more of runway. See our <a href="/blog/how-to-negotiate-severance.html">severance negotiation guide</a>.</li>
+      <li><strong>Compare COBRA against ACA marketplace plans.</strong> Since your income just dropped, you may qualify for subsidies that make marketplace coverage significantly cheaper than COBRA.</li>
+      <li><strong>Cut fixed costs before variable ones.</strong> A renegotiated car payment or a paused subscription saves money every single month for the rest of your runway; a one-time grocery cut only saves once.</li>
+      <li><strong>File for unemployment immediately</strong> — delaying doesn't just cost the weeks you wait, it can shorten your total benefit window in some states.</li>
+      <li><strong>Consider short-term or freelance income</strong> even at reduced pay — extending your runway by even 3–4 weeks materially reduces financial pressure during a job search.</li>
+      <li><strong>Recalculate monthly,</strong> not just once. Your runway changes as expenses shift and unemployment payments begin — use our <a href="/layoff-budget-cutter/">budget cutter tool</a> to see the impact of specific cuts instantly.</li>
+    </ol>
+  </div>
+
+  <div class="card faq-card" id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <div class="faq-q" role="button" aria-expanded="false">What is a financial runway after a layoff?<div class="faq-icon" aria-hidden="true">+</div></div>
+      <div class="faq-a">Your runway is the number of months you can cover your expenses using liquid savings, severance pay, and unemployment benefits before your money runs out, assuming no new income. It's calculated as total available funds divided by your real monthly expenses.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" role="button" aria-expanded="false">Should I count unemployment benefits in my runway?<div class="faq-icon" aria-hidden="true">+</div></div>
+      <div class="faq-a">Yes, but only after checking your state's rules on how severance affects timing. In many states, unemployment doesn't start until severance payments end or are exhausted. Once it does start, include the expected weekly amount and duration for your state in your runway calculation.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" role="button" aria-expanded="false">Is severance pay taxed the same as a regular paycheck?<div class="faq-icon" aria-hidden="true">+</div></div>
+      <div class="faq-a">Severance is treated as taxable wages and is typically subject to federal income tax, Social Security, and Medicare, often withheld at a flat supplemental rate (22% federally, as of recent IRS guidance) rather than your normal payroll rate. Always calculate your runway using the after-tax, take-home amount — not the gross severance figure.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" role="button" aria-expanded="false">What's the fastest way to extend my runway?<div class="faq-icon" aria-hidden="true">+</div></div>
+      <div class="faq-a">The two highest-leverage moves are usually reducing your largest fixed costs (housing, car payments, subscriptions) and negotiating for more severance before you sign your agreement, since even a few additional weeks of severance can add a full month or more of runway.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" role="button" aria-expanded="false">Should I include my retirement savings in my runway calculation?<div class="faq-icon" aria-hidden="true">+</div></div>
+      <div class="faq-a">Generally no. 401(k) and IRA withdrawals before age 59½ usually trigger a 10% early withdrawal penalty plus ordinary income tax, which erodes their value significantly. Treat retirement accounts as a last resort, separate from your primary runway calculation, not as part of your available funds.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Keep reading</h2>
+    <div class="related-links">
+      <a href="/blog/what-to-do-first-48-hours-after-layoff.html" class="related-link">First 48 Hours Checklist</a>
+      <a href="/blog/how-to-negotiate-severance.html" class="related-link">How to Negotiate Severance</a>
+      <a href="/blog/cobra-vs-aca-after-layoff.html" class="related-link">COBRA vs ACA</a>
+      <a href="/blog/unemployment-benefits-by-state.html" class="related-link">Unemployment by State</a>
+      <a href="/layoff-budget-cutter/" class="related-link">Budget Cutter Tool</a>
+    </div>
+  </div>
+
+  <div class="ad-wrap">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4073124583870713" data-ad-slot="7607989280" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <p class="disclaimer">This guide is for general educational purposes and is not financial or tax advice. Tax withholding rates, unemployment rules, and severance treatment vary by state and individual circumstances. For guidance specific to your situation, consult a licensed financial or tax professional.</p>
+</div>
+
+<footer>
+  <p>© 2026 LayoffSurvival · Not financial or legal advice · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/about.html">About</a> · <a href="/blog/">Blog</a></p>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const open = q.classList.contains('open');
+    q.classList.toggle('open'); q.setAttribute('aria-expanded', String(!open));
+    q.nextElementSibling.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>
