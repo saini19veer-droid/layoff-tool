@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>2026 Layoff Tracker — Company-by-Company Index</title>
+<meta name="description" content="An index of 2026 corporate layoffs across 32 major companies — jobs cut, severance terms, and timelines, organized by sector."/>
+<link rel="canonical" href="https://layoffsurvival.com/2026-layoffs-tracker/"/>
+<meta property="og:title" content="2026 Layoff Tracker — Every Major Company Cutting Jobs This Year"/>
+<meta property="og:description" content="An index of 2026 corporate layoffs across 32 major companies — jobs cut, severance terms, and timelines, organized by sector."/>
+<meta property="og:url" content="https://layoffsurvival.com/2026-layoffs-tracker/"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","name":"2026 Layoff Tracker","description":"An index of 2026 corporate layoffs across 32 major companies, organized by sector.","url":"https://layoffsurvival.com/2026-layoffs-tracker/","dateModified":"2026-08-10","publisher":{"@type":"Organization","name":"LayoffSurvival","url":"https://layoffsurvival.com"}}
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4073124583870713" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  /* ── Core brand ── */
+  --brand:        #1a3a5c;
+  --brand-hover:  #122a47;
+  --brand-soft:   #1e3d6b;
+  --accent:       #1d4ed8;
+  --accent-light: #eff6ff;
+  --accent-mid:   #bfdbfe;
+
+  /* ── Neutrals ── */
+  --bg:           #f0f6ff;
+  --surface:      #FFFFFF;
+  --border:       #dbe7f5;
+  --border-light: #e8f0fb;
+
+  /* ── Text ── */
+  --text-900:     #0f1b2d;
+  --text-700:     #1e3050;
+  --text-500:     #3d5478;
+  --text-400:     #6b82a8;
+
+  /* ── Semantic ── */
+  --green:        #16a34a;
+  --green-light:  #f0fdf4;
+  --green-dark:   #15803d;
+  --amber:        #d97706;
+  --amber-light:  #fffbeb;
+  --amber-dark:   #b45309;
+  --red:          #dc2626;
+  --red-light:    #fef2f2;
+  --red-dark:     #b91c1c;
+  --blue:         #2563eb;
+  --blue-light:   #eff6ff;
+  --blue-dark:    #1e3a8a;
+
+  /* ── Shadows ── */
+  --shadow-xs:    0 1px 2px rgba(26,58,92,.05);
+  --shadow-sm:    0 1px 4px rgba(26,58,92,.07), 0 1px 2px rgba(26,58,92,.04);
+  --shadow-md:    0 4px 12px rgba(26,58,92,.08);
+  --shadow-lg:    0 8px 24px rgba(26,58,92,.09);
+
+  /* ── Radii ── */
+  --r-xs:  4px;
+  --r-sm:  6px;
+  --r-md:  8px;
+  --r-lg:  12px;
+  --r-xl:  16px;
+
+  /* ── Typography ── */
+  --font-body:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Lora', Georgia, 'Times New Roman', serif;
+}
+
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-body);
+  background:var(--bg);
+  color:var(--text-900);
+  line-height:1.65;
+  font-size:16px;
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:10px}
+
+/* ═══════════ HEADER ═══════════ */
+.site-header{
+  background:var(--brand);
+  padding:0 2.5rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height:58px;
+  position:sticky;
+  top:0;
+  z-index:300;
+  box-shadow:0 1px 0 rgba(0,0,0,.18);
+}
+.logo{
+  font-family:var(--font-body);
+  font-weight:700;
+  font-size:16px;
+  letter-spacing:-.1px;
+  color:#fff;
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  gap:9px;
+}
+.logo-icon{
+  width:30px;height:30px;
+  border-radius:50%;
+  background:rgba(255,255,255,.18);
+  border:1.5px solid rgba(255,255,255,.3);
+  display:flex;align-items:center;justify-content:center;
+  font-size:15px;
+  flex-shrink:0;
+}
+.header-right{display:flex;align-items:center;gap:6px}
+.header-nav{display:flex;align-items:center;gap:2px}
+.header-nav-link{
+  font-size:13.5px;
+  font-weight:500;
+  color:rgba(255,255,255,.78);
+  text-decoration:none;
+  padding:6px 13px;
+  border-radius:var(--r-sm);
+  transition:all .15s;
+  letter-spacing:.01em;
+}
+.header-nav-link:hover{color:#fff;background:rgba(255,255,255,.1)}
+.header-badge{
+  font-size:11px;font-weight:600;
+  background:rgba(255,255,255,.13);
+  color:rgba(255,255,255,.88);
+  padding:4px 12px;border-radius:20px;
+  border:1px solid rgba(255,255,255,.2);
+  margin-left:6px;
+  white-space:nowrap;
+}
+
+/* ═══════════ LAYOUT ═══════════ */
+.container{max-width:1180px;margin:0 auto;padding:0 2rem}
+@media(max-width:700px){.container{padding:0 1.25rem}}
+
+/* ═══════════ HERO ═══════════ */
+.hero{padding:2.5rem 0 1.75rem}
+.hero-eyebrow{
+  font-size:11px;font-weight:600;
+  text-transform:uppercase;letter-spacing:.12em;
+  color:var(--accent);margin-bottom:.8rem;
+  display:flex;align-items:center;gap:10px;
+}
+.hero-line{display:block;height:1px;width:30px;background:var(--accent-mid);flex-shrink:0;opacity:1}
+.hero h1{
+  font-family:var(--font-heading);
+  font-size:clamp(26px,3.2vw,40px);
+  font-weight:700;
+  line-height:1.18;
+  letter-spacing:-.3px;
+  color:var(--text-900);
+  margin-bottom:.75rem;
+}
+.hero h1 em{font-style:italic;color:var(--brand);font-weight:600}
+.hero p{
+  font-size:15.5px;
+  color:var(--text-500);
+  max-width:640px;
+  line-height:1.75;
+  margin-bottom:1.2rem;
+}
+.hero-badges{display:flex;gap:6px;flex-wrap:wrap}
+.hero-badge{
+  background:var(--surface);
+  color:var(--text-500);
+  font-size:11px;font-weight:600;
+  padding:4px 12px;
+  border-radius:20px;
+  border:1px solid var(--border);
+  box-shadow:var(--shadow-xs);
+}
+
+/* ═══════════ SIDEBAR-STYLE STAT ROW ═══════════ */
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem;margin:1.5rem 0}
+@media(max-width:700px){.stat-row{grid-template-columns:1fr}}
+.stat-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r-md);
+  padding:.9rem 1.1rem;
+  box-shadow:var(--shadow-xs);
+}
+.stat-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--text-400);margin-bottom:.25rem}
+.stat-value{font-family:var(--font-heading);font-size:26px;font-weight:700;letter-spacing:-.3px;line-height:1;color:var(--brand)}
+.stat-sub{font-size:11.5px;color:var(--text-400);margin-top:.35rem;line-height:1.4}
+
+/* ═══════════ CARDS ═══════════ */
+.card{
+  background:var(--surface);
+  border-radius:var(--r-lg);
+  box-shadow:var(--shadow-sm);
+  border:1px solid var(--border);
+  overflow:hidden;
+  margin-bottom:1.5rem;
+}
+.card-header{
+  padding:.9rem 1.4rem;
+  border-bottom:1px solid var(--border-light);
+  background:var(--bg);
+  display:flex;align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;gap:.75rem;
+}
+.card-title{
+  font-family:var(--font-heading);
+  font-size:14.5px;font-weight:700;
+  color:var(--text-900);
+  display:flex;align-items:center;gap:8px;
+}
+.card-body{padding:1.35rem 1.4rem}
+
+/* ═══════════ SEARCH / FILTER CARD ═══════════ */
+.section-label{
+  font-size:10.5px;font-weight:700;
+  text-transform:uppercase;letter-spacing:.1em;
+  color:var(--text-400);
+  margin-bottom:.8rem;
+  display:flex;align-items:center;gap:8px;
+}
+.section-label::after{content:'';flex:1;height:1px;background:var(--border-light)}
+
+input[type="text"]{
+  padding:9px 12px;
+  border:1px solid var(--border);
+  border-radius:var(--r-sm);
+  font-size:14px;
+  font-family:var(--font-body);
+  color:var(--text-900);
+  background:var(--surface);
+  outline:none;
+  transition:border-color .15s, box-shadow .15s;
+  width:100%;
+  max-width:360px;
+  -webkit-appearance:none;
+  line-height:1.4;
+}
+input[type="text"]:hover{border-color:var(--accent-mid)}
+input[type="text"]:focus{
+  border-color:var(--accent);
+  box-shadow:0 0 0 3px rgba(29,78,216,.1);
+}
+
+.data-btn{
+  background:none;border:1px solid var(--border);border-radius:20px;
+  padding:5px 14px;font-size:12px;font-weight:600;cursor:pointer;
+  color:var(--text-500);font-family:var(--font-body);transition:all .15s;
+}
+.data-btn:hover{background:var(--accent-light);color:var(--text-900);border-color:var(--accent-mid)}
+.data-btn.active{background:var(--brand);border-color:var(--brand);color:#fff}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-top:.9rem}
+
+#results-meta{font-size:12px;color:var(--text-400);margin:0 0 1rem;padding:0 .1rem}
+
+/* ═══════════ COMPANY CARD GRID ═══════════ */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+  gap:1rem;
+}
+.co-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r-lg);
+  box-shadow:var(--shadow-xs);
+  padding:1.1rem 1.25rem 1.1rem;
+  text-decoration:none;
+  color:inherit;
+  display:flex;
+  flex-direction:column;
+  gap:.7rem;
+  transition:box-shadow .15s, transform .15s, border-color .15s;
+}
+.co-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px);border-color:var(--accent-mid)}
+.co-card:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+.co-top{display:flex;align-items:flex-start;justify-content:space-between;gap:.6rem}
+.co-name{font-family:var(--font-heading);font-weight:700;font-size:16.5px;color:var(--text-900);line-height:1.25}
+.co-sector-badge{
+  font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;
+  background:var(--accent-light);color:var(--brand);
+  border:1px solid var(--accent-mid);
+  padding:2px 8px;border-radius:10px;white-space:nowrap;flex-shrink:0;
+}
+
+.co-stat-value{font-family:var(--font-heading);font-size:24px;font-weight:700;color:var(--brand);letter-spacing:-.3px;line-height:1}
+.co-stat-label{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-400);margin-top:.3rem}
+.co-stat-sub{font-size:11.5px;color:var(--text-400);margin-top:.15rem}
+
+.co-desc{font-size:12.5px;color:var(--text-500);line-height:1.6;flex-grow:1}
+
+.co-link{
+  font-size:12px;font-weight:700;color:var(--accent);
+  display:flex;align-items:center;justify-content:space-between;
+  padding-top:.7rem;border-top:1px solid var(--border-light);
+}
+.co-link .arrow{transition:transform .15s}
+.co-card:hover .co-link .arrow{transform:translateX(3px)}
+
+#empty{
+  display:none;
+  text-align:center;
+  padding:3rem 1.5rem;
+  color:var(--text-400);
+  font-size:14px;
+  background:var(--surface);
+  border:1px dashed var(--border);
+  border-radius:var(--r-lg);
+}
+
+/* ═══════════ FOOTER ═══════════ */
+footer{
+  background:var(--brand);
+  padding:2rem 2.5rem;
+  margin-top:3rem;
+  color:rgba(255,255,255,.55);
+  font-size:13px;
+  line-height:1.7;
+  text-align:center;
+}
+footer a{color:rgba(255,255,255,.62);text-decoration:none;transition:color .15s}
+footer a:hover{color:#fff}
+footer strong{color:rgba(255,255,255,.85)}
+
+/* ═══════════ RESPONSIVE ═══════════ */
+@media(max-width:600px){
+  .card-body{padding:1.1rem 1.2rem}
+  .card-header{padding:.85rem 1.2rem}
+  .site-header{padding:0 1rem;height:54px}
+  .hero{padding:1.75rem 0 1.25rem}
+  .header-nav{display:none}
+}
+.ad-wrap{margin:1.5rem 0}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="/" class="logo" aria-label="LayoffSurvival home">
+    <div class="logo-icon" aria-hidden="true">🛡️</div>
+    LayoffSurvival
+  </a>
+  <div class="header-right">
+    <nav class="header-nav">
+      <a href="/" class="header-nav-link">Calculator</a>
+      <a href="/severance-negotiation-script/" class="header-nav-link">Severance Script</a>
+      <a href="/layoff-budget-cutter/" class="header-nav-link">Budget Cutter</a>
+      <a href="/blog/" class="header-nav-link">Blog</a>
+    </nav>
+    <span class="header-badge">Updated Aug 2026</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="hero">
+    <div class="hero-eyebrow">
+      <span class="hero-line"></span>32 Companies · 8 Sectors<span class="hero-line"></span>
+    </div>
+    <h1>2026 Layoff Tracker —<br/><em>Find Your Company's File</em></h1>
+    <p>An index of corporate job cuts across 32 major companies in 2026 — headline numbers, severance terms, and timelines, organized by sector. Search or filter below, then open a company's file for the full breakdown.</p>
+    <div class="hero-badges">
+      <span class="hero-badge">✓ Jobs Cut by Company</span>
+      <span class="hero-badge">✓ Severance Terms</span>
+      <span class="hero-badge">✓ Sector Filters</span>
+      <span class="hero-badge">✓ 2020–2026 Timelines</span>
+    </div>
+  </div>
+
+  <div class="stat-row">
+    <div class="stat-card">
+      <div class="stat-label">Companies Tracked</div>
+      <div class="stat-value">32</div>
+      <div class="stat-sub">Across 8 sectors</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Combined Headline Cuts</div>
+      <div class="stat-value">~280,000+</div>
+      <div class="stat-sub">Rough scale marker, not a precise sum — see note below</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Date Range</div>
+      <div class="stat-value">2020–26</div>
+      <div class="stat-sub">Earliest round to most recent</div>
+    </div>
+  </div>
+
+  <div class="ad-wrap">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4073124583870713" data-ad-slot="4236434492" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <div class="card-title">🔎 Find a Company</div>
+      <div style="font-size:12px;color:var(--text-400)" id="results-meta-top"></div>
+    </div>
+    <div class="card-body">
+      <input type="text" id="search" placeholder="Search by company or sector…" aria-label="Search companies"/>
+      <div class="tabs" id="tabs" role="tablist" aria-label="Filter by sector"></div>
+    </div>
+  </div>
+
+  <div class="section-label">All Companies</div>
+  <p id="results-meta"></p>
+  <div class="grid" id="grid"></div>
+  <p id="empty">No companies match that search. Try a different name or sector.</p>
+
+  <div class="ad-wrap">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4073124583870713" data-ad-slot="4236434492" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+</div>
+
+<footer>
+  <strong>About this index.</strong> Figures are headline numbers pulled from each company's individual file — actual counts, dates, and severance terms vary by round and region. This page is an independently compiled quick-reference, not an official statement from any listed company. Open a company's file for full context, and confirm current details with the company or your employment counsel.
+</footer>
+
+<script>
+  const companies = [
+    {slug:"amazon-layoffs-2026", name:"Amazon", sector:"Technology & Software", statLabel:"Jobs Cut", statValue:"30,000+", statSub:"Oct 2025 – May 2026", desc:"Amazon cut over 30,000 corporate employees between October 2025 and May 2026. If you're affected,"},
+    {slug:"google-layoffs-2026", name:"Google", sector:"Technology & Software", statLabel:"Min Severance", statValue:"16 weeks", statSub:"+ 2 wks/yr service", desc:"Google has conducted multiple rounds of targeted layoffs in 2026. Google's severance package —"},
+    {slug:"meta-layoffs-2026", name:"Meta", sector:"Technology & Software", statLabel:"Jobs Cut (2026)", statValue:"8,000+", statSub:"Multiple rounds", desc:"Meta cut approximately 8,000 employees across multiple 2026 rounds. Meta's severance package is one"},
+    {slug:"microsoft-layoffs-2026", name:"Microsoft", sector:"Technology & Software", statLabel:"Jobs Cut (2026)", statValue:"14,000+", statSub:"Ongoing rounds", desc:"Microsoft cut over 14,000 employees in 2026 as part of its ongoing AI restructuring. The standout"},
+    {slug:"intel-layoffs-2026", name:"Intel", sector:"Technology & Software", statLabel:"Jobs Cut (2026)", statValue:"15,000+", statSub:"Ongoing restructuring", desc:"Intel is cutting over 15,000 employees in 2026 as part of its turnaround restructuring. Intel's"},
+    {slug:"salesforce-layoffs-2026", name:"Salesforce", sector:"Technology & Software", statLabel:"Jobs Cut", statValue:"8,000+", statSub:"Jan 2025 – Mar 2026", desc:"Salesforce cut approximately 8,000 employees across multiple rounds in 2025–2026, including AEs,"},
+    {slug:"cisco-layoffs-2026", name:"Cisco", sector:"Technology & Software", statLabel:"Jobs Cut", statValue:"21,000+", statSub:"Aug 2024 – Feb 2026", desc:"Cisco announced two of the largest layoff rounds in its history — 4,000 in 2024 and 17,000+ in its"},
+    {slug:"dell-layoffs-2026", name:"Dell", sector:"Technology & Software", statLabel:"Jobs Cut", statValue:"13,000+", statSub:"Feb 2024 – Jun 2026", desc:"Dell has cut more than 13,000 jobs since early 2024 as PC demand declined and the company"},
+    {slug:"hp-layoffs-2026", name:"HP", sector:"Technology & Software", statLabel:"Jobs Cut", statValue:"6,000+", statSub:"Oct 2023 – Dec 2025", desc:"HP Inc. has been reducing headcount steadily through its 'Future Ready' restructuring plan. If you"},
+    {slug:"oracle-layoffs-2026", name:"Oracle", sector:"Technology & Software", statLabel:"Jobs Cut", statValue:"15,000+", statSub:"Jun 2022 – Jun 2026", desc:"Oracle has eliminated more than 15,000 positions since its Cerner acquisition and cloud"},
+    {slug:"ibm-layoffs-2026", name:"IBM", sector:"Technology & Software", statLabel:"Jobs Cut", statValue:"14,000+", statSub:"Jan 2023 – Jun 2026", desc:"IBM has been restructuring continuously since its spinoff of Kyndryl in 2021, cutting more than"},
+    {slug:"adobe-layoffs-2026", name:"Adobe", sector:"Technology & Software", statLabel:"Jobs Cut", statValue:"3,500+", statSub:"Jan 2024 – Jun 2026", desc:"Adobe cut approximately 1,300 employees in early 2024 and continued restructuring through 2025–2026"},
+    {slug:"atlassian-layoffs-2026", name:"Atlassian", sector:"Technology & Software", statLabel:"Jobs Cut", statValue:"1,600", statSub:"~10% of global workforce", desc:"Atlassian cut 1,600 employees — about 10% of its global workforce — on March 11, 2026, to self-fund"},
+    {slug:"netflix-layoffs-2026", name:"Netflix", sector:"Social Media & Streaming", statLabel:"Jobs Cut", statValue:"2,500+", statSub:"May 2022 – Jun 2026", desc:"Netflix has cut approximately 2,500 employees since 2022 as the streaming market matured and the"},
+    {slug:"spotify-layoffs-2026", name:"Spotify", sector:"Social Media & Streaming", statLabel:"Jobs Cut", statValue:"5,000+", statSub:"Jan 2023 – Mar 2026", desc:"Spotify cut approximately 1,500 employees in late 2023 and continued reducing headcount in 2024–2026"},
+    {slug:"snap-layoffs-2026", name:"Snap", sector:"Social Media & Streaming", statLabel:"Jobs Cut", statValue:"10,000+", statSub:"Aug 2022 – Jun 2026", desc:"Snap has cut more than half its workforce since 2022 across multiple rounds, including a major 2024"},
+    {slug:"twitter-layoffs-2026", name:"X / Twitter", sector:"Social Media & Streaming", statLabel:"Jobs Cut", statValue:"6,500+", statSub:"Oct 2022 – Dec 2025", desc:"X (Twitter) cut approximately 80% of its workforce between October 2022 and late 2025 under Elon"},
+    {slug:"pinterest-layoffs-2026", name:"Pinterest", sector:"Social Media & Streaming", statLabel:"Jobs Cut", statValue:"~780", statSub:"About 15% of ~5,200 employees", desc:"Pinterest cut roughly 780 employees — about 15% of its workforce — in January 2026, reallocating"},
+    {slug:"uber-layoffs-2026", name:"Uber", sector:"Travel, Delivery & Rideshare", statLabel:"Jobs Cut", statValue:"7,000+", statSub:"May 2020 – Jun 2026", desc:"Uber has gone through multiple restructuring rounds. Corporate employees affected in 2025–2026"},
+    {slug:"lyft-layoffs-2026", name:"Lyft", sector:"Travel, Delivery & Rideshare", statLabel:"Jobs Cut", statValue:"4,500+", statSub:"Jul 2022 – May 2026", desc:"Lyft has cut its corporate workforce by more than 30% since 2022 across several rounds as the"},
+    {slug:"airbnb-layoffs-2026", name:"Airbnb", sector:"Travel, Delivery & Rideshare", statLabel:"Jobs Cut", statValue:"5,800+", statSub:"May 2020 – Dec 2025", desc:"Airbnb was widely praised for its 2020 layoff package and has maintained a strong severance"},
+    {slug:"doordash-layoffs-2026", name:"DoorDash", sector:"Travel, Delivery & Rideshare", statLabel:"Jobs Cut", statValue:"2,000+", statSub:"Nov 2022 – Apr 2026", desc:"DoorDash cut approximately 1,250 corporate employees in late 2022 and has continued targeted"},
+    {slug:"paypal-layoffs-2026", name:"PayPal", sector:"Finance & Fintech", statLabel:"Jobs Cut", statValue:"9,000+", statSub:"Jan 2024 – Apr 2026", desc:"PayPal cut 2,500 employees in early 2024 and continued restructuring through 2025 and into 2026"},
+    {slug:"citigroup-layoffs-2026", name:"Citigroup", sector:"Finance & Fintech", statLabel:"Multi-Year Target", statValue:"20,000", statSub:"Jobs cut by end of 2026", desc:"Citigroup is more than halfway toward a previously announced target of cutting 20,000 jobs by the"},
+    {slug:"boeing-layoffs-2026", name:"Boeing", sector:"Manufacturing & Industrial", statLabel:"Jobs Cut", statValue:"17,000+", statSub:"Oct 2024 – Jun 2026", desc:"Boeing announced plans to cut 17,000 jobs — approximately 10% of its global workforce — following"},
+    {slug:"ford-layoffs-2026", name:"Ford", sector:"Manufacturing & Industrial", statLabel:"Jobs Cut", statValue:"8,000+", statSub:"Aug 2022 – Jun 2026", desc:"Ford has been cutting its salaried workforce steadily as it transitions to EV manufacturing and"},
+    {slug:"gm-layoffs-2026", name:"GM", sector:"Manufacturing & Industrial", statLabel:"Jobs Cut", statValue:"5,000+", statSub:"Jan 2023 – Jun 2026", desc:"General Motors has cut salaried roles as it shifts investment toward EVs and software-defined"},
+    {slug:"chevron-layoffs-2026", name:"Chevron", sector:"Energy", statLabel:"Total Target Cut", statValue:"Up to 8,000", statSub:"15–20% of global workforce", desc:"Chevron is cutting up to 8,000 jobs — 15 to 20% of its global workforce — by the end of 2026,"},
+    {slug:"target-layoffs-2026", name:"Target", sector:"Retail", statLabel:"First Wave (Oct 2025)", statValue:"~1,800", statSub:"1,000 layoffs + 800 unfilled roles", desc:"Target eliminated approximately 1,800 corporate roles starting October 2025, then cut roughly 500"},
+    {slug:"disney-layoffs-2026", name:"Disney", sector:"Media & Entertainment", statLabel:"Jobs Cut", statValue:"8,000+", statSub:"Feb 2023 – Jun 2026", desc:"Disney cut 7,000+ employees in 2023 and continued restructuring through 2025–2026 across its"},
+    {slug:"warner-layoffs-2026", name:"Warner Bros.", sector:"Media & Entertainment", statLabel:"Jobs Cut", statValue:"10,000+", statSub:"Apr 2022 – Jun 2026", desc:"Warner Bros. Discovery has cut more than 10,000 jobs since the Discovery-WarnerMedia merger in 2022"},
+    {slug:"washington-post-layoffs-2026", name:"Washington Post", sector:"Media & Entertainment", statLabel:"Newsroom Cut", statValue:"~300+", statSub:"Of ~800-person newsroom", desc:"The Washington Post cut roughly one-third of its 800-person newsroom — more than 300 journalists —"},
+  ];
+
+  const grid = document.getElementById("grid");
+  const tabsEl = document.getElementById("tabs");
+  const emptyEl = document.getElementById("empty");
+  const metaEl = document.getElementById("results-meta");
+  const metaTopEl = document.getElementById("results-meta-top");
+  const searchEl = document.getElementById("search");
+
+  const SECTOR_SHORT = {
+    "Technology & Software": "Tech",
+    "Social Media & Streaming": "Social/Streaming",
+    "Travel, Delivery & Rideshare": "Travel/Delivery",
+    "Finance & Fintech": "Finance",
+    "Manufacturing & Industrial": "Manufacturing",
+    "Energy": "Energy",
+    "Retail": "Retail",
+    "Media & Entertainment": "Media",
+  };
+
+  const sectors = ["All", ...Array.from(new Set(companies.map(c => c.sector)))];
+  let activeSector = "All";
+  let query = "";
+
+  function sectorCount(s){
+    return s === "All" ? companies.length : companies.filter(c => c.sector === s).length;
+  }
+
+  function renderTabs(){
+    tabsEl.innerHTML = "";
+    sectors.forEach(s => {
+      const btn = document.createElement("button");
+      btn.className = "data-btn" + (s === activeSector ? " active" : "");
+      btn.type = "button";
+      btn.textContent = `${s} (${sectorCount(s)})`;
+      btn.addEventListener("click", () => {
+        activeSector = s;
+        renderTabs();
+        renderGrid();
+      });
+      tabsEl.appendChild(btn);
+    });
+  }
+
+  function escapeHtml(str){
+    return str.replace(/[&<>"']/g, m => ({
+      "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
+    }[m]));
+  }
+
+  function renderGrid(){
+    const q = query.trim().toLowerCase();
+    const list = companies.filter(c => {
+      const matchesSector = activeSector === "All" || c.sector === activeSector;
+      const matchesQuery = !q || c.name.toLowerCase().includes(q) || c.sector.toLowerCase().includes(q);
+      return matchesSector && matchesQuery;
+    });
+
+    const metaText = `Showing ${list.length} of ${companies.length} companies${activeSector !== "All" ? " · " + activeSector : ""}`;
+    metaEl.textContent = metaText;
+    metaTopEl.textContent = metaText;
+
+    grid.innerHTML = "";
+    emptyEl.style.display = list.length ? "none" : "block";
+
+    list.forEach(c => {
+      const card = document.createElement("a");
+      card.className = "co-card";
+      card.href = `/${c.slug}/`;
+      card.innerHTML = `
+        <div class="co-top">
+          <div class="co-name">${escapeHtml(c.name)}</div>
+          <div class="co-sector-badge">${escapeHtml(SECTOR_SHORT[c.sector] || c.sector)}</div>
+        </div>
+        <div>
+          <div class="co-stat-value">${escapeHtml(c.statValue)}</div>
+          <div class="co-stat-label">${escapeHtml(c.statLabel)}</div>
+          <div class="co-stat-sub">${escapeHtml(c.statSub)}</div>
+        </div>
+        <div class="co-desc">${escapeHtml(c.desc)}…</div>
+        <div class="co-link"><span>View file</span><span class="arrow">→</span></div>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  searchEl.addEventListener("input", (e) => {
+    query = e.target.value;
+    renderGrid();
+  });
+
+  renderTabs();
+  renderGrid();
+</script>
+
+</body>
+</html>
