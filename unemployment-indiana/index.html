@@ -14,8 +14,8 @@
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"How much unemployment will I get in Indiana?","acceptedAnswer":{"@type":"Answer","text":"In Indiana, unemployment benefits pay up to $390 per week. The actual amount is calculated as 47% of your average weekly wage, up to the state maximum. Most workers receive $390–$390 per week depending on their prior salary."}},
-{"@type":"Question","name":"How long do unemployment benefits last in Indiana?","acceptedAnswer":{"@type":"Answer","text":"Unemployment benefits in Indiana last up to 26 weeks. This is the standard duration when Indiana unemployment rates are within normal range."}},
+{"@type":"Question","name":"How much unemployment will I get in Indiana?","acceptedAnswer":{"@type":"Answer","text":"In Indiana, unemployment benefits pay up to $390 per week, with a minimum of $37. Base period: total base-period wages of at least 1.5× your highest-earning quarter, totaling at least $2,500 across your last two quarters, with a base-period minimum of $4,200. Your weekly benefit is 47% of your average weekly wage across the base period, capped at $390. Indiana has a 1-week waiting period."}},
+{"@type":"Question","name":"How long do unemployment benefits last in Indiana?","acceptedAnswer":{"@type":"Answer","text":"Unemployment benefits in Indiana last up to 26 weeks under standard conditions."}},
 {"@type":"Question","name":"Is there a waiting period for unemployment in Indiana?","acceptedAnswer":{"@type":"Answer","text":"Indiana has a 1-week waiting period before your first benefit payment. The clock starts when you file — not when you were laid off."}},
 {"@type":"Question","name":"How do I file for unemployment in Indiana?","acceptedAnswer":{"@type":"Answer","text":"File online at File at uplink.in.gov. You will need your Social Security number, employer information, and wage history. File as soon as possible after your layoff — the waiting period clock starts on the day you file, not the day you were laid off."}}
 ]}
@@ -169,9 +169,9 @@ footer a:hover{color:var(--navy)}
     <div style="background:var(--blue-light);border:1px solid #93c5fd;border-radius:10px;padding:.75rem 1rem;margin-bottom:1.1rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem">
       <div>
         <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--blue-dark);margin-bottom:2px">Indiana Unemployment Benefit</div>
-        <div style="font-size:12px;color:#1e40af">Up to <strong>$390/week</strong> · 26 weeks max · 1-week waiting period</div>
+        <div style="font-size:12px;color:#1e40af">Up to <strong>$390/week</strong> · 26 weeks max · 1 week waiting period</div>
       </div>
-      <div style="font-family:var(--display);font-size:20px;font-weight:800;color:var(--blue-dark)">$1689<span style="font-size:12px;font-weight:500">/mo est.</span></div>
+      <div style="font-family:var(--display);font-size:20px;font-weight:800;color:var(--blue-dark)">$1,689<span style="font-size:12px;font-weight:500">/mo est.</span></div>
     </div>
 
     <button onclick="calcRunwayindiana()" style="width:100%;padding:13px;background:linear-gradient(135deg,#1d4ed8,#1e3a8a);color:#fff;border:none;border-radius:10px;font-family:var(--display);font-size:15px;font-weight:800;cursor:pointer;box-shadow:0 4px 14px rgba(29,78,216,.3);transition:all .2s;letter-spacing:-.2px" onmouseover="this.style.transform='translateY(-1px)'" onmouseout="this.style.transform='none'">
@@ -222,7 +222,7 @@ footer a:hover{color:var(--navy)}
     const severancePay = weeklyPay * sevWks;
 
     // Indiana unemployment
-    const weeklyBenefit = Math.min(weeklyPay * (47/100), 390);
+    const weeklyBenefit = Math.min(weeklyPay * (0.47), 390);
     const monthlyBenefit = weeklyBenefit * 4.33;
     const benefitMonths = 26 / 4.33;
     const waitWeeks = 1;
@@ -302,20 +302,19 @@ footer a:hover{color:var(--navy)}
 
   <div class="card">
     <h2>How Indiana Unemployment Benefits Are Calculated</h2>
-    <p>Base period: first 4 of last 5 completed quarters. Benefit = 47% of average weekly wage up to maximum.</p>
-    <p>Indiana uses 47% of average weekly wages and requires earnings in at least two quarters of the base period.</p>
+    <p>Base period: total base-period wages of at least 1.5× your highest-earning quarter, totaling at least $2,500 across your last two quarters, with a base-period minimum of $4,200. Your weekly benefit is 47% of your average weekly wage across the base period, capped at $390. Indiana has a 1-week waiting period.</p>
 
     <table class="cost-table">
       <thead><tr><th>Prior Annual Salary</th><th>Est. Weekly Benefit</th><th>Est. Monthly Benefit</th><th>Total (max duration)</th></tr></thead>
       <tbody>
-        <tr><td>$40,000/year</td><td class="num-green">$361</td><td class="num-green">$1,563</td><td class="num-green">$9,386</td></tr>
-        <tr><td>$60,000/year</td><td class="num-green">$390</td><td class="num-green">$1,688</td><td class="num-green">$10,140</td></tr>
-        <tr><td>$80,000/year</td><td class="num-amber">$390</td><td class="num-amber">$1,688</td><td class="num-amber">$10,140</td></tr>
-        <tr><td>$100,000/year</td><td class="num-amber">$390</td><td class="num-amber">$1,688</td><td class="num-amber">$10,140</td></tr>
-        <tr><td>$150,000+/year</td><td class="num-red">$390 (capped)</td><td class="num-red">$1,688</td><td class="num-red">$10,140</td></tr>
+        <tr><td>$40,000/year</td><td class="num-green">$362</td><td class="num-green">$1,565</td><td class="num-green">$9,400</td></tr>
+        <tr><td>$60,000/year</td><td class="num-amber">$390</td><td class="num-amber">$1,689</td><td class="num-amber">$10,140</td></tr>
+        <tr><td>$80,000/year</td><td class="num-amber">$390</td><td class="num-amber">$1,689</td><td class="num-amber">$10,140</td></tr>
+        <tr><td>$100,000/year</td><td class="num-amber">$390</td><td class="num-amber">$1,689</td><td class="num-amber">$10,140</td></tr>
+        <tr><td>$150,000+/year</td><td class="num-red">$390 (capped)</td><td class="num-red">$1,689</td><td class="num-red">$10,140</td></tr>
       </tbody>
     </table>
-    <p style="font-size:.82rem;color:var(--muted)">Estimates based on 47% wage replacement formula. Actual benefit determined by your specific wage history and Indiana Department of Labor review.</p>
+    <p style="font-size:.82rem;color:var(--muted)">Estimates based on Indiana’s actual benefit formula (47% replacement, capped at $390/week). Actual benefit determined by your specific wage history and state review.</p>
   </div>
 
   <div class="ad-wrap">
@@ -339,6 +338,12 @@ footer a:hover{color:var(--navy)}
     </div>
   </div>
 
+
+  <div class="card">
+    <h2>How Much You Can Earn While Still Collecting in Indiana</h2>
+    <p>You can earn up to $100 in a week without any reduction to your benefit. Earnings above that reduce your check dollar-for-dollar.</p>
+  </div>
+
   <div class="card">
     <h2>How to File for Unemployment in Indiana</h2>
     <ul>
@@ -357,7 +362,7 @@ footer a:hover{color:var(--navy)}
 
   <div class="card">
     <h2>How Indiana Compares to Other States</h2>
-    <p>Indiana has one of the less generous unemployment programs in the US. At $390 maximum weekly benefit, many workers will find that benefits cover a relatively small portion of their prior income. Careful financial planning and aggressive job searching are especially important for Indiana workers after a layoff.</p>
+    <p>Indiana's $390 maximum trails neighboring Illinois's $628–$859 range and Ohio's $624–$842 range by a wide margin, despite a similar 47% wage-replacement formula — the gap comes almost entirely from a much lower statutory cap, not a less generous formula.</p>
     <p>Check other states for comparison:</p>
     <div class="state-links"><a href="/unemployment-california/" class="state-link">California</a><a href="/unemployment-texas/" class="state-link">Texas</a><a href="/unemployment-florida/" class="state-link">Florida</a><a href="/unemployment-new-york/" class="state-link">New York</a><a href="/unemployment-illinois/" class="state-link">Illinois</a><a href="/unemployment-washington/" class="state-link">Washington</a><a href="/unemployment-new-jersey/" class="state-link">New Jersey</a><a href="/unemployment-massachusetts/" class="state-link">Massachusetts</a><a href="/unemployment-colorado/" class="state-link">Colorado</a><a href="/unemployment-georgia/" class="state-link">Georgia</a><a href="/unemployment-ohio/" class="state-link">Ohio</a><a href="/unemployment-pennsylvania/" class="state-link">Pennsylvania</a></div>
   </div>
